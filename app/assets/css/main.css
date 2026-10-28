@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1e38;
+}
+::-webkit-scrollbar-thumb {
+  background: #dbf40b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c2dd02;
+}
+
+/* Yellow lime active glow line */
+.lemon-line {
+  background: linear-gradient(90deg, #c2dd02 0%, #dbf40b 50%, rgba(219, 244, 11, 0) 100%);
+}
+
+.lemon-badge {
+  background-color: #dbf40b;
+  color: #1a2202;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Glassmorphism helpers */
+.glass-header {
+  background: rgba(15, 36, 62, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-lemon {
+  background: rgba(219, 244, 11, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(219, 244, 11, 0.25);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* ====================================================
+   SAFE ANIMATIONS (NEVER HIDE CONTENT WITH OPACITY 0)
+   ==================================================== */
+
+/* Elements are always visible by default to prevent missing content */
+.reveal-on-scroll,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Smooth tab transition animations */
+.tab-fade-enter-active,
+.tab-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+.tab-fade-enter-from {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.tab-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* Keyframe entrance animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-floatSoft {
+  animation: floatSoft 3s ease-in-out infinite;
+}
+
+/* Lemon button shine on hover */
+.lemon-btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.lemon-btn-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.75s ease;
+}
+.lemon-btn-shine:hover::after {
+  left: 120%;
+}
