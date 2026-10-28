@@ -37,10 +37,10 @@ const navItems: NavLink[] = [
     name: 'Tin tức sự kiện',
     href: '/#tin-tuc',
     subItems: [
-      { title: 'Tin hoạt động của Lãnh đạo Viện', href: '/#tin-tuc' },
-      { title: 'Thực hành quyền công tố & Kiểm sát xét xử', href: '/#tin-tuc' },
-      { title: 'Tin tức Kiểm sát các quận, huyện', href: '/#tin-tuc' },
-      { title: 'Điểm tin An ninh trật tự Thủ đô', href: '/#tin-tuc' }
+      { title: 'Tin hoạt động của Lãnh đạo Tòa án', href: '/#tin-tuc' },
+      { title: 'Công tác xét xử & giải quyết các vụ án', href: '/#tin-tuc' },
+      { title: 'Tin tức TAND các quận, huyện', href: '/#tin-tuc' },
+      { title: 'Điểm tin An ninh trật tự & Pháp luật', href: '/#tin-tuc' }
     ]
   },
   {
@@ -66,8 +66,8 @@ const navItems: NavLink[] = [
     name: 'Giới thiệu',
     href: '/#gioi-thieu',
     subItems: [
-      { title: 'Chức năng, nhiệm vụ của ngành VKS', href: '/#gioi-thieu' },
-      { title: 'Ban Lãnh đạo VKSND TP Hà Nội', href: '/#gioi-thieu' },
+      { title: 'Chức năng, nhiệm vụ của Tòa án nhân dân', href: '/#gioi-thieu' },
+      { title: 'Ban Lãnh đạo TAND TP Hà Nội', href: '/#gioi-thieu' },
       { title: 'Sơ đồ tổ chức các phòng nghiệp vụ', href: '/#gioi-thieu' },
       { title: 'Lịch sử truyền thống và thành tựu', href: '/#gioi-thieu' }
     ]
@@ -243,17 +243,19 @@ const handleLoginClick = () => {
         <!-- Top Drawer Header Bar (Nền vàng chanh nhận diện thương hiệu) -->
         <div class="bg-gradient-to-r from-lemon-400 via-lemon-300 to-lemon-400 px-4 py-3 border-b-2 border-lemon-500 flex items-center justify-between shadow-sm flex-shrink-0">
           <div class="flex items-center gap-2.5 min-w-0">
-            <img 
-              src="https://vksndtc.gov.vn/Publishing_Resources/web/assets/img/logo.png" 
-              alt="Logo VKSND" 
-              class="w-8 h-8 rounded-full bg-white p-0.5 object-contain shadow flex-shrink-0"
-            />
+            <div class="w-9 h-9 rounded-lg bg-white p-1 border border-lemon-400 flex items-center justify-center flex-shrink-0 shadow">
+              <img 
+                src="https://hanoi.toaan.gov.vn/webcenter/oracle/webcenter/siteresources/scopedMD/shared/portaltinh/images/logo.png" 
+                alt="Logo TAND" 
+                class="w-full h-full object-contain"
+              />
+            </div>
             <div class="min-w-0">
               <span class="text-[10px] font-black uppercase tracking-wider text-red-700 block leading-tight">
-                VKSND TỐI CAO
+                TÒA ÁN NHÂN DÂN TỐI CAO
               </span>
               <span class="text-xs font-black uppercase text-navy-950 block truncate leading-tight">
-                VKSND THÀNH PHỐ HÀ NỘI
+                TÒA ÁN NHÂN DÂN TP HÀ NỘI
               </span>
             </div>
           </div>
@@ -340,7 +342,7 @@ const handleLoginClick = () => {
             <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
             <span>Hotline: 0243.825.5999</span>
           </div>
-          <span class="text-[11px] text-slate-400 font-mono">vkshanoi.gov.vn</span>
+          <span class="text-[11px] text-slate-400 font-mono">hanoi.toaan.gov.vn</span>
         </div>
       </div>
     </Teleport>

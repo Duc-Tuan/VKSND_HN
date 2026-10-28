@@ -12,7 +12,7 @@ const article = computed<NewsItem>(() => {
   return getArticleById(articleId.value) || {
     ...hotSpotlightNews,
     id: articleId.value,
-    title: 'Tin tức nghiệp vụ ngành Kiểm sát nhân dân TP Hà Nội'
+    title: 'Tin tức nghiệp vụ ngành Tòa án nhân dân TP Hà Nội'
   }
 })
 
@@ -23,7 +23,7 @@ const relatedArticles = computed(() => {
 
 // SEO Meta
 useHead(() => ({
-  title: `${article.value.title} | VKSND TP HÀ NỘI`,
+  title: `${article.value.title} | TAND TP HÀ NỘI`,
   meta: [
     { name: 'description', content: article.value.summary },
     { property: 'og:title', content: article.value.title },
@@ -184,7 +184,7 @@ const navigateToArticle = (id: string) => {
                   </span>
                 </div>
                 <p class="text-xs sm:text-sm font-semibold text-slate-800 mt-0.5">
-                  {{ article.source || 'Cổng thông tin điện tử Viện kiểm sát nhân dân tối cao' }}
+                  {{ article.source || 'Cổng thông tin điện tử Tòa án nhân dân tối cao' }}
                   <span v-if="article.officialDocNumber" class="block sm:inline text-slate-600 font-normal text-xs sm:ml-1">
                     ({{ article.officialDocNumber }})
                   </span>
@@ -353,11 +353,11 @@ const navigateToArticle = (id: string) => {
             <img 
               :src="article.imageUrl" 
               :alt="article.title"
-              @error="(e: any) => e.target.src = '/images/vksnd_hanoi_facade.jpg'"
+              @error="(e: any) => e.target.src = '/images/tand_hanoi_facade.jpg'"
               class="w-full h-auto max-h-[460px] object-cover object-center"
             />
             <figcaption class="p-3 bg-slate-100 text-slate-600 text-xs italic text-center border-t border-slate-200">
-              Ảnh minh họa: Hoạt động nghiệp vụ thực hành quyền công tố và kiểm sát tư pháp tại Thủ đô Hà Nội.
+              Ảnh minh họa: Hoạt động nghiệp vụ xét xử và cải cách tư pháp tại Thủ đô Hà Nội.
             </figcaption>
           </figure>
 
@@ -382,10 +382,10 @@ const navigateToArticle = (id: string) => {
             <!-- Fallback content if empty -->
             <div v-else class="space-y-4 text-justify leading-relaxed">
               <p>
-                Viện kiểm sát nhân dân thành phố Hà Nội tiếp tục đổi mới toàn diện, nâng cao chất lượng thực hành quyền công tố và kiểm sát các hoạt động tư pháp theo đúng tinh thần cải cách tư pháp của Đảng và Nhà nước.
+                Tòa án nhân dân thành phố Hà Nội tiếp tục đổi mới toàn diện, nâng cao chất lượng xét xử các loại vụ án và thực hiện quyền tư pháp theo đúng tinh thần cải cách tư pháp của Đảng và Nhà nước.
               </p>
               <p>
-                Toàn thể cán bộ, Kiểm sát viên hai cấp quán triệt sâu sắc phương châm "Đoàn kết, trách nhiệm - Kỷ cương, liêm chính - Bản lĩnh, hiệu quả", kiên quyết không để xảy ra án oan hoặc bỏ lọt tội phạm, bảo đảm quyền con người, quyền công dân theo Hiến pháp năm 2013.
+                Toàn thể Thẩm phán, Thư ký, cán bộ Tòa án hai cấp quán triệt sâu sắc phương châm "Gần dân, hiểu dân, giúp dân, học dân", kiên quyết không để xảy ra án oan hoặc bỏ lọt tội phạm, bảo đảm quyền con người, quyền công dân theo Hiến pháp năm 2013.
               </p>
             </div>
 
@@ -394,15 +394,15 @@ const navigateToArticle = (id: string) => {
               <div class="flex items-start gap-3">
                 <span class="text-3xl sm:text-4xl text-lemon-600 font-serif leading-none">“</span>
                 <p class="text-sm sm:text-base font-bold text-navy-950 leading-snug">
-                  Mỗi Kiểm sát viên Thủ đô phải luôn khắc ghi lời dạy thiêng liêng của Bác Hồ: 
-                  <span class="text-red-700 uppercase font-black tracking-wide">"Công minh - Chính trực - Khách quan - Thận trọng - Khiêm tốn"</span>, 
+                  Mỗi Thẩm phán, cán bộ Tòa án Thủ đô phải luôn khắc ghi lời dạy thiêng liêng của Bác Hồ: 
+                  <span class="text-red-700 uppercase font-black tracking-wide">"Phụng công - Thủ pháp - Chí công - Vô tư"</span>, 
                   không ngừng nâng cao bản lĩnh chính trị và năng lực chuyên môn để xứng đáng với sự tin cậy của Đảng và Nhân dân.
                 </p>
               </div>
             </blockquote>
 
             <p class="text-justify leading-relaxed">
-              Thông tin chi tiết về các vụ việc, chỉ đạo điều hành tiếp theo sẽ liên tục được cập nhật trên Cổng thông tin điện tử VKSND thành phố Hà Nội và các kênh truyền thông chính thống ngành Kiểm sát nhân dân.
+              Thông tin chi tiết về các vụ việc, chỉ đạo điều hành tiếp theo sẽ liên tục được cập nhật trên Cổng thông tin điện tử TAND thành phố Hà Nội và các kênh truyền thông chính thống ngành Tòa án nhân dân.
             </p>
           </article>
 
@@ -416,20 +416,20 @@ const navigateToArticle = (id: string) => {
                 </span>
               </div>
               <span class="text-xs text-slate-500 font-medium">
-                Ban Biên tập Cổng TTĐT VKSND TP Hà Nội
+                Ban Biên tập Cổng TTĐT TAND TP Hà Nội
               </span>
             </div>
 
             <div class="pt-3 text-xs text-slate-600 space-y-1.5 leading-relaxed">
               <p>
-                <strong>Nguồn phát hành:</strong> {{ article.source || 'Cổng thông tin điện tử VKSND TP Hà Nội' }} 
+                <strong>Nguồn phát hành:</strong> {{ article.source || 'Cổng thông tin điện tử TAND TP Hà Nội' }} 
                 <span v-if="article.sourceUrl">({{ article.sourceUrl }})</span>
               </p>
               <p v-if="article.verifiedAgency">
                 <strong>Cơ quan kiểm duyệt nội dung:</strong> {{ article.verifiedAgency }}
               </p>
               <p class="italic text-slate-500">
-                Ghi rõ nguồn "Cổng TTĐT Viện kiểm sát nhân dân thành phố Hà Nội" khi phát hành lại thông tin từ bài viết này.
+                Ghi rõ nguồn "Cổng TTĐT Tòa án nhân dân thành phố Hà Nội" khi phát hành lại thông tin từ bài viết này.
               </p>
             </div>
           </div>
@@ -443,13 +443,13 @@ const navigateToArticle = (id: string) => {
               Từ khóa:
             </span>
             <span class="px-2.5 py-1 rounded bg-slate-100 hover:bg-lemon-200 text-slate-700 font-medium cursor-pointer transition-colors">
-              #VKSNDTPHaNoi
+              #TANDTPHaNoi
             </span>
             <span class="px-2.5 py-1 rounded bg-slate-100 hover:bg-lemon-200 text-slate-700 font-medium cursor-pointer transition-colors">
               #CaiCachTuPhap
             </span>
             <span class="px-2.5 py-1 rounded bg-slate-100 hover:bg-lemon-200 text-slate-700 font-medium cursor-pointer transition-colors">
-              #ThucHanhQuyenCongTo
+              #HoatDongXetXu
             </span>
             <span class="px-2.5 py-1 rounded bg-slate-100 hover:bg-lemon-200 text-slate-700 font-medium cursor-pointer transition-colors">
               #PhienToaSoHoa
@@ -505,7 +505,7 @@ const navigateToArticle = (id: string) => {
                 <img 
                   :src="rel.imageUrl" 
                   :alt="rel.title"
-                  @error="(e: any) => e.target.src = '/images/vksnd_courtroom_hall.jpg'"
+                  @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'"
                   class="w-20 h-16 rounded-lg object-cover flex-shrink-0 bg-slate-900 group-hover:scale-105 transition-transform"
                 />
                 <div class="flex-1 min-w-0">

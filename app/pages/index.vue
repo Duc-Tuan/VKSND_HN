@@ -56,7 +56,7 @@ const openVideoModal = (video: any) => {
 
 <template>
   <div class="homepage">
-    <!-- Section 0: HÌNH ẢNH TRỤ SỞ VKSND HÀ NỘI (Edge-to-edge Auto-slider) -->
+    <!-- Section 0: HÌNH ẢNH TRỤ SỞ TAND HÀ NỘI (Edge-to-edge Auto-slider) -->
     <BuildingShowcase />
 
     <!-- Section 1: Tin tức sự kiện nổi bật (Hero Spotlight + Sub-hot + Timeline 24/7) -->
@@ -64,7 +64,7 @@ const openVideoModal = (video: any) => {
       @openArticle="handleOpenArticle"
     />
 
-    <!-- Section 2: Lịch xét xử tại Tòa án & Phân công Kiểm sát viên -->
+    <!-- Section 2: Lịch xét xử tại Tòa án nhân dân thành phố Hà Nội -->
     <CourtScheduleSection 
       @openCourtModal="openCourtModal"
     />
@@ -79,17 +79,17 @@ const openVideoModal = (video: any) => {
       @openServiceModal="openServiceModal"
     />
 
-    <!-- Section 5: Chuyên mục Hoạt động kiểm sát nghiệp vụ (Án Hình sự, Dân sự, Xây dựng ngành) -->
+    <!-- Section 5: Chuyên mục Hoạt động xét xử nghiệp vụ (Án Hình sự, Dân sự, Xây dựng ngành) -->
     <CategoryNewsSection 
       @openArticle="handleOpenArticle"
     />
 
-    <!-- Section 6: Truyền hình Kiểm sát & Infographic phổ biến pháp luật -->
+    <!-- Section 6: Truyền hình Tòa án & Infographic phổ biến pháp luật -->
     <InfographicMediaSection 
       @openVideoModal="openVideoModal"
     />
 
-    <!-- Section 7: Chỉ tiêu công tác & Thành tựu nổi bật ngành VKS Thủ đô -->
+    <!-- Section 7: Chỉ tiêu công tác & Thành tựu nổi bật TAND Thủ đô -->
     <StatsSection />
 
     <!-- Section 8: Liên kết cơ quan Đảng & Nhà nước -->

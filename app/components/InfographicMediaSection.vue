@@ -40,7 +40,7 @@ const otherVideos = computed(() => mediaVideos.slice(1))
             <img
               :src="featuredVideo.thumbnail"
               :alt="featuredVideo.title"
-              @error="(e: any) => e.target.src = '/images/vksnd_courtroom_hall.jpg'"
+              @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'"
               class="w-full h-full object-cover opacity-85 group-hover:scale-108 group-hover:opacity-75 transition-all duration-500"
             />
             
@@ -76,7 +76,7 @@ const otherVideos = computed(() => mediaVideos.slice(1))
               :class="index === 0 ? 'delay-100' : 'delay-200'"
             >
               <div class="relative w-24 h-16 rounded overflow-hidden flex-shrink-0 bg-slate-800">
-                <img :src="v.thumbnail" :alt="v.title" @error="(e: any) => e.target.src = '/images/vksnd_courtroom_hall.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform"/>
+                <img :src="v.thumbnail" :alt="v.title" @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition-transform"/>
                 <span class="absolute bottom-1 right-1 px-1 rounded bg-black/80 text-white text-[9px] font-mono">
                   {{ v.duration }}
                 </span>
@@ -119,7 +119,7 @@ const otherVideos = computed(() => mediaVideos.slice(1))
             </h3>
 
             <p class="text-xs text-slate-700 leading-relaxed mb-4">
-              Cẩm nang infographic hướng dẫn người dân phòng tránh mất tiền trong tài khoản ngân hàng, giả danh công an, viện kiểm sát gọi điện đe dọa.
+              Cẩm nang infographic hướng dẫn người dân phòng tránh mất tiền trong tài khoản ngân hàng, giả danh công an, tòa án gọi điện đe dọa.
             </p>
 
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-3 border-t border-lemon-200 text-xs">

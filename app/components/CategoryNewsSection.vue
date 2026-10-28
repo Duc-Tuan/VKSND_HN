@@ -16,7 +16,7 @@ const emit = defineEmits(['openArticle'])
         <div class="flex items-center gap-2.5">
           <div class="w-2.5 h-6 bg-lemon-500 rounded-sm flex-shrink-0"></div>
           <h2 class="text-base sm:text-lg md:text-xl font-extrabold text-navy-950 uppercase">
-            CHUYÊN ĐỀ HOẠT ĐỘNG KIỂM SÁT NGHIỆP VỤ
+            CHUYÊN ĐỀ HOẠT ĐỘNG XÉT XỬ & NGHIỆP VỤ TÒA ÁN
           </h2>
         </div>
 
@@ -64,7 +64,7 @@ const emit = defineEmits(['openArticle'])
                 <img
                   :src="item.imageUrl"
                   :alt="item.title"
-                  @error="(e: any) => e.target.src = '/images/vksnd_courtroom_hall.jpg'"
+                  @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'"
                   class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                 />
                 <span class="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-navy-900/90 text-lemon-300 border border-lemon-400/30 backdrop-blur-sm">

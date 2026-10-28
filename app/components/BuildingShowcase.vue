@@ -13,27 +13,27 @@ interface BuildingImage {
 const buildingImages: BuildingImage[] = [
   {
     id: 'b-1',
-    title: 'Trụ sở chính Viện Kiểm sát Nhân dân Thành phố Hà Nội',
-    subtitle: 'Công trình kiến trúc tư pháp hiện đại, uy nghiêm và kỷ cương',
-    url: '/images/vksnd_hanoi_facade.jpg',
-    description: 'Tòa nhà trụ sở chính với hệ thống cột trụ uy nghi, Quốc huy nước CHXHCN Việt Nam và cờ đỏ sao vàng tung bay trên nóc công trình.',
-    badge: 'MẶT TIỀN TRỤ SỞ CHÍNH'
+    title: 'Trụ sở Tòa án nhân dân thành phố Hà Nội',
+    subtitle: 'Công trình kiến trúc Pháp cổ tại số 43 Hai Bà Trưng, Hoàn Kiếm, Hà Nội',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMVbBgGBxspnUMpUKXB5ULZvZj7TfQqpc8AvvygBBImfPHXwoFwi6T09A&s=10',
+    description: 'Trụ sở Tòa án nhân dân thành phố Hà Nội với kiến trúc Pháp cổ đặc trưng, Quốc huy nước CHXHCN Việt Nam và cờ đỏ sao vàng tung bay trang trọng.',
+    badge: 'TRỤ SỞ TAND TP HÀ NỘI'
   },
   {
     id: 'b-2',
-    title: 'Toàn cảnh Trụ sở Viện kiểm sát nhân dân',
-    subtitle: 'Kiến trúc bề thế, quy chuẩn cơ quan tư pháp quốc gia',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/c/c8/Tr%E1%BB%A5_s%E1%BB%9F_Vi%E1%BB%87n_ki%E1%BB%83m_s%C3%A1t_nh%C3%A2n_d%C3%A2n_t%E1%BB%91i_cao.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=original',
-    description: 'Địa chỉ tiếp đón các đoàn đại biểu, tổ chức hội nghị toàn ngành và tiếp công dân định kỳ của Lãnh đạo Viện.',
-    badge: 'KIẾN TRÚC UY NGHIÊM'
+    title: 'Toàn cảnh Trụ sở Tòa án nhân dân thành phố Hà Nội',
+    subtitle: 'Kiến trúc bề thế, kỷ cương, biểu tượng công lý của Thủ đô Hà Nội',
+    url: '/images/tand_hanoi_facade.jpg',
+    description: 'Mặt tiền bề thế của Tòa án nhân dân thành phố Hà Nội với biển tên mạ vàng, cột trụ vững chãi và khuôn viên cây xanh mát.',
+    badge: 'MẶT TIỀN TRỤ SỞ CHÍNH'
   },
   {
     id: 'b-3',
-    title: 'Phòng xét xử số hóa & Trung tâm truyền thông tư pháp',
-    subtitle: 'Hệ thống trình chiếu chứng cứ điện tử và số hóa hồ sơ vụ án',
-    url: '/images/vksnd_courtroom_hall.jpg',
-    description: 'Trang bị màn hình độ phân giải cao phục vụ tranh tụng số, kết nối trực tuyến phiên tòa rút kinh nghiệm 30 điểm cầu quận huyện.',
-    badge: 'PHÒNG XÉT XỬ SỐ HÓA'
+    title: 'Hội trường xét xử & Phòng xử án số hóa TAND',
+    subtitle: 'Hệ thống phòng xử án hiện đại, trang bị công nghệ xét xử trực tuyến',
+    url: '/images/tand_courtroom_hall.jpg',
+    description: 'Phòng xử án trang nghiêm với Quốc huy Việt Nam, bàn Hội đồng xét xử chuẩn mực tư pháp và màn hình số hóa hồ sơ tranh tụng điện tử.',
+    badge: 'PHÒNG XÉT XỬ TAND'
   }
 ]
 
@@ -49,10 +49,10 @@ const PROGRESS_STEP = 50
 const currentImage = computed<BuildingImage>(() => {
   return buildingImages[currentIndex.value] ?? buildingImages[0] ?? {
     id: 'b-default',
-    title: 'Trụ sở Viện Kiểm sát Nhân dân Thành phố Hà Nội',
-    subtitle: 'Cơ quan thực hành quyền công tố và kiểm sát hoạt động tư pháp',
-    url: '/images/vksnd_hanoi_facade.jpg',
-    description: 'Trụ sở cơ quan VKSND TP Hà Nội',
+    title: 'Trụ sở Tòa án nhân dân Thành phố Hà Nội',
+    subtitle: 'Cơ quan xét xử, thực hiện quyền tư pháp của Nhà nước',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMVbBgGBxspnUMpUKXB5ULZvZj7TfQqpc8AvvygBBImfPHXwoFwi6T09A&s=10',
+    description: 'Trụ sở cơ quan TAND TP Hà Nội',
     badge: 'TRỤ SỞ CHÍNH'
   }
 })
@@ -112,7 +112,7 @@ onUnmounted(() => {
           <img
             :src="currentImage.url"
             :alt="currentImage.title"
-            @error="(e: any) => e.target.src = '/images/vksnd_hanoi_facade.jpg'"
+            @error="(e: any) => e.target.src = '/images/tand_hanoi_facade.jpg'"
             class="w-full h-full object-cover object-center transform scale-100 hover:scale-105 transition-transform duration-700 ease-out"
           />
         </div>
@@ -128,7 +128,7 @@ onUnmounted(() => {
           <span class="w-2.5 h-2.5 rounded-full bg-lemon-500 animate-pulse"></span>
           <span class="text-amber-800 font-black uppercase tracking-wider">{{ currentImage.badge }}</span>
           <span class="text-slate-300">•</span>
-          <span class="hidden sm:inline text-slate-800 font-bold">VIỆN KIỂM SÁT NHÂN DÂN THÀNH PHỐ HÀ NỘI</span>
+          <span class="hidden sm:inline text-slate-800 font-bold">TÒA ÁN NHÂN DÂN THÀNH PHỐ HÀ NỘI</span>
         </div>
 
         <button
@@ -204,7 +204,7 @@ onUnmounted(() => {
               :title="img.title"
             >
               <div class="w-10 h-7 sm:w-14 sm:h-9 rounded-lg overflow-hidden flex-shrink-0 bg-black shadow-inner">
-                <img :src="img.url" :alt="img.title" @error="(e: any) => e.target.src = '/images/vksnd_hanoi_facade.jpg'" class="w-full h-full object-cover"/>
+                <img :src="img.url" :alt="img.title" @error="(e: any) => e.target.src = '/images/tand_hanoi_facade.jpg'" class="w-full h-full object-cover"/>
               </div>
               <div class="hidden lg:block text-left pr-2">
                 <span 

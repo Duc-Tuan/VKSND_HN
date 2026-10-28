@@ -138,7 +138,7 @@ const handleSubmit = (e: Event) => {
           </div>
           <h4 class="text-base font-bold text-navy-950">Gửi hồ sơ thành công!</h4>
           <p class="text-xs text-slate-600 max-w-sm mx-auto">
-            Hệ thống Cổng TTĐT VKSND TP Hà Nội đã tiếp nhận yêu cầu. Mã biên nhận hồ sơ của bạn là <strong class="font-mono text-navy-950">HN-2026-94821</strong>.
+            Hệ thống Cổng TTĐT TAND TP Hà Nội đã tiếp nhận yêu cầu. Mã biên nhận hồ sơ của bạn là <strong class="font-mono text-navy-950">HN-2026-94821</strong>.
           </p>
         </div>
       </div>

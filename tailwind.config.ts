@@ -5,19 +5,19 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        // Tông màu chủ đạo VÀNG CHANH (Lemon / Lime Yellow)
+        // Tông màu chủ đạo VÀNG CHANH #FFF44F (Lemon Yellow) theo yêu cầu
         lemon: {
-          50: '#fefee8',
-          100: '#fbffc2',
-          200: '#f6ff85',
-          300: '#ebff42',
-          400: '#dbf40b',
-          500: '#c2dd02', // Vàng chanh chủ đạo
-          600: '#99b000',
-          700: '#738500',
-          800: '#596705',
-          900: '#4a550a',
-          950: '#262f00',
+          50: '#fffef0',  // Kem vàng chanh thanh nhẹ tinh tế
+          100: '#fffccb', // Vàng chanh phấn nhạt
+          200: '#fff9a6', // Vàng chanh pastel mềm mại
+          300: '#fff777', // Vàng chanh sáng
+          400: '#FFF44F', // MÀU CHỦ ĐẠO CHÍNH THỨC (Lemon Yellow #FFF44F)
+          500: '#ebd626', // Tông đậm hơn làm viền/nhấn
+          600: '#cca913', // Vàng chanh sẫm
+          700: '#a37e10', // Màu chữ/icon sắc nét
+          800: '#836214',
+          900: '#6f5117',
+          950: '#402c08',
         },
         navy: {
           50: '#f0f5fa',
@@ -38,8 +38,8 @@ export default <Partial<Config>>{
         serif: ['"Merriweather"', 'serif'],
       },
       boxShadow: {
-        'lemon-glow': '0 0 20px -3px rgba(219, 244, 11, 0.4)',
-        'lemon-sm': '0 0 10px -2px rgba(219, 244, 11, 0.3)',
+        'lemon-glow': '0 0 20px -3px rgba(255, 244, 79, 0.45)',
+        'lemon-sm': '0 0 10px -2px rgba(255, 244, 79, 0.3)',
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

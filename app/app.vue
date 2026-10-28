@@ -84,7 +84,7 @@ const scrollToTop = () => {
       @openSearch="isSearchModalOpen = true" 
     />
 
-    <!-- Main Header Banner (Trụ sở VKSND background, Logo ngành, Slogan Bác dạy) -->
+    <!-- Main Header Banner (Trụ sở TAND background, Logo TAND, Slogan Bác dạy) -->
     <HeaderBanner />
 
     <!-- Navigation Bar (Trang chủ, Tin tức sự kiện, Thông báo, Lịch xét xử, Giới thiệu, Hoạt động khác, Hướng dẫn thủ tục, Đăng nhập) -->

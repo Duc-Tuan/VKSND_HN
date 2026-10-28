@@ -49,18 +49,18 @@ const handleLogin = (e: Event) => {
         </button>
 
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0">
-            <div class="w-full h-full rounded-full bg-white flex items-center justify-center p-0.5">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0 border border-lemon-400">
+            <div class="w-full h-full rounded-lg bg-white flex items-center justify-center p-0.5">
               <img
-                src="https://vksndtc.gov.vn/Publishing_Resources/web/assets/img/logo.png"
-                alt="Logo VKSND"
+                src="https://hanoi.toaan.gov.vn/webcenter/oracle/webcenter/siteresources/scopedMD/shared/portaltinh/images/logo.png"
+                alt="Logo TAND"
                 class="w-full h-full object-contain"
               />
             </div>
           </div>
           <div>
             <h3 class="text-sm sm:text-base font-black text-navy-950">ĐĂNG NHẬP HỆ THỐNG</h3>
-            <p class="text-[11px] sm:text-xs text-slate-800 font-bold">Cổng TTĐT VKSND TP Hà Nội</p>
+            <p class="text-[11px] sm:text-xs text-slate-800 font-bold">Cổng TTĐT TAND TP Hà Nội</p>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const handleLogin = (e: Event) => {
             <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
             </svg>
-            <span class="truncate">Cán bộ KSV</span>
+            <span class="truncate">Thẩm phán / Cán bộ</span>
           </button>
           <button
             @click="activeTab = 'citizen'"
@@ -93,7 +93,7 @@ const handleLogin = (e: Event) => {
         </div>
       </div>
 
-      <!-- Tab 1: Cán bộ KSV -->
+      <!-- Tab 1: Thẩm phán / Cán bộ -->
       <div v-if="activeTab === 'officer'" class="p-4 sm:p-6 space-y-3.5 sm:space-y-4">
         <form @submit="handleLogin" class="space-y-3 sm:space-y-4">
           <div>
@@ -103,7 +103,7 @@ const handleLogin = (e: Event) => {
             <input
               v-model="username"
               type="text"
-              placeholder="ksv.hanoi@vksnd.gov.vn"
+              placeholder="thamphan.hanoi@toaan.gov.vn"
               required
               class="w-full text-xs px-3 py-2 sm:py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-lemon-500 focus:ring-1 focus:ring-lemon-400"
             />

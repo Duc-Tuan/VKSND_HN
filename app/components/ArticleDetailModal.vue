@@ -110,31 +110,31 @@ const printArticle = () => {
           <img 
             :src="article.imageUrl" 
             :alt="article.title" 
-            @error="(e: any) => e.target.src = '/images/vksnd_courtroom_hall.jpg'"
+            @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'"
             class="w-full h-80 object-cover object-center"
           />
           <p class="text-xs text-center text-slate-500 italic py-2 bg-slate-50">
-            Hình ảnh tư liệu hoạt động công tác kiểm sát - VKSND Thành phố Hà Nội
+            Hình ảnh tư liệu hoạt động công tác xét xử - TAND Thành phố Hà Nội
           </p>
         </div>
 
         <!-- Full Content Paragraphs -->
         <div class="prose max-w-none text-slate-700 leading-relaxed space-y-4">
           <p>
-            {{ article.content || 'Thực hiện kế hoạch công tác kiểm sát năm 2026, VKSND TP Hà Nội tiếp tục đổi mới toàn diện các khâu công tác, gắn công tác kiểm sát với việc thực hiện nhiệm vụ chính trị của Thủ đô, giữ vững an ninh chính trị, trật tự an toàn xã hội, bảo vệ tính mạng, tài sản và quyền lợi hợp pháp của nhân dân.' }}
+            {{ article.content || 'Thực hiện kế hoạch công tác năm 2026, TAND TP Hà Nội tiếp tục đổi mới toàn diện các khâu công tác, đẩy mạnh cải cách tư pháp và nâng cao chất lượng xét xử các loại vụ án, gắn hoạt động tư pháp với việc bảo vệ công lý, quyền con người, quyền công dân và sự phát triển bền vững của Thủ đô.' }}
           </p>
           <p>
-            Trong quá trình thực hành quyền công tố và kiểm sát các hoạt động tư pháp, các đơn vị trực thuộc đã chủ động phối hợp với các cơ quan tiến hành tố tụng, áp dụng đồng bộ các giải pháp nhằm nâng cao chất lượng tranh tụng, số hóa tài liệu chứng cứ, không để xảy ra trường hợp nào đình chỉ điều tra do không phạm tội hoặc Tòa án tuyên không phạm tội.
+            Trong quá trình thực hiện quyền tư pháp và hoạt động xét xử, Tòa án nhân dân hai cấp thành phố đã chủ động áp dụng đồng bộ các giải pháp nhằm nâng cao chất lượng tranh tụng, tăng cường số hóa tài liệu hồ sơ phiên tòa trực tuyến, bảo đảm xét xử đúng người, đúng tội, đúng pháp luật, không làm oan người vô tội và không bỏ lọt tội phạm.
           </p>
           <p>
-            Đặc biệt, Ban cán sự Đảng VKSND TP Hà Nội chỉ đạo toàn thể công chức, Kiểm sát viên tiếp tục đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh gắn với 5 đức tính của người cán bộ Kiểm sát: "Công minh - Chính trực - Khách quan - Thận trọng - Khiêm tốn".
+            Đặc biệt, Ban cán sự Đảng TAND TP Hà Nội chỉ đạo toàn thể Thẩm phán, Thư ký và công chức Tòa án tiếp tục đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh gắn với lời dạy của Bác: "Phụng công, thủ pháp, chí công, vô tư" và phương châm "Gần dân, hiểu dân, giúp dân, học dân".
           </p>
         </div>
 
         <!-- Share & Signature -->
         <div class="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <div>
-            <strong>Nguồn:</strong> Cổng thông tin điện tử VKSND TP Hà Nội
+            <strong>Nguồn:</strong> Cổng thông tin điện tử TAND TP Hà Nội
           </div>
           <div class="flex items-center gap-2">
             <span>Chia sẻ bài viết:</span>

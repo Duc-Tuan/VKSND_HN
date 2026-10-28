@@ -7,18 +7,18 @@
         <!-- Left Column: Agency Identification (5 Cột) -->
         <div class="md:col-span-5 space-y-3 sm:space-y-4">
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 sm:w-12 sm:h-12 p-0.5 rounded-full bg-lemon-400 flex items-center justify-center flex-shrink-0 shadow-lemon-sm">
-              <div class="w-full h-full rounded-full bg-white flex items-center justify-center p-0.5">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 p-1 rounded-xl bg-lemon-400 flex items-center justify-center flex-shrink-0 shadow-lemon-sm">
+              <div class="w-full h-full rounded-lg bg-white flex items-center justify-center p-1">
                 <img
-                  src="https://vksndtc.gov.vn/Publishing_Resources/web/assets/img/logo.png"
-                  alt="Logo VKSND"
+                  src="https://hanoi.toaan.gov.vn/webcenter/oracle/webcenter/siteresources/scopedMD/shared/portaltinh/images/logo.png"
+                  alt="Logo TAND TP Hà Nội"
                   class="w-full h-full object-contain"
                 />
               </div>
             </div>
             <div>
-              <span class="text-[10px] sm:text-[11px] font-semibold text-lemon-400 uppercase tracking-wider block">VIỆN KIỂM SÁT NHÂN DÂN TỐI CAO</span>
-              <h3 class="text-xs sm:text-base font-extrabold text-white uppercase">VIỆN KIỂM SÁT NHÂN DÂN THÀNH PHỐ HÀ NỘI</h3>
+              <span class="text-[10px] sm:text-[11px] font-semibold text-lemon-400 uppercase tracking-wider block">TÒA ÁN NHÂN DÂN TỐI CAO</span>
+              <h3 class="text-xs sm:text-base font-extrabold text-white uppercase">TÒA ÁN NHÂN DÂN THÀNH PHỐ HÀ NỘI</h3>
             </div>
           </div>
 
@@ -40,13 +40,13 @@
               <svg class="w-4 h-4 text-lemon-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-              <span><strong>Email tiếp nhận:</strong> togiac@hanoi.vks.gov.vn / bbt@vksndhanoi.gov.vn</span>
+              <span><strong>Email tiếp nhận:</strong> hanoi@toaan.gov.vn / toaanhanoi@toaan.gov.vn</span>
             </p>
           </div>
 
           <div class="pt-1 text-[11px] sm:text-xs text-slate-400">
             <p>Giấy phép xuất bản Cổng thông tin điện tử số: 88/GP-TTĐT do Cục Phát thanh, Truyền hình và Thông tin điện tử cấp.</p>
-            <p class="mt-0.5">Người chịu trách nhiệm chính: Đồng chí Phó Viện trưởng phụ trách Cổng thông tin điện tử.</p>
+            <p class="mt-0.5">Người chịu trách nhiệm chính: Đồng chí Phó Chánh án phụ trách Cổng thông tin điện tử.</p>
           </div>
         </div>
 
@@ -58,7 +58,7 @@
           <ul class="space-y-2 text-xs">
             <li>
               <a href="#tin-tuc" class="hover:text-lemon-300 transition-colors flex items-center gap-1.5">
-                <span class="text-lemon-400">›</span> Tin tức sự kiện & Hoạt động ngành
+                <span class="text-lemon-400">›</span> Tin tức sự kiện & Hoạt động ngành Tòa án
               </a>
             </li>
             <li>
@@ -78,7 +78,7 @@
             </li>
             <li>
               <a href="#huong-dan-thu-tuc" class="hover:text-lemon-300 transition-colors flex items-center gap-1.5">
-                <span class="text-lemon-400">›</span> Gửi đơn thư tố giác tội phạm trực tuyến
+                <span class="text-lemon-400">›</span> Nộp đơn khởi kiện, phản ánh trực tuyến
               </a>
             </li>
             <li>
@@ -104,7 +104,7 @@
           </div>
 
           <div class="text-[10px] sm:text-[11px] text-slate-400 text-center">
-            Ghi rõ nguồn "Cổng TTĐT Viện kiểm sát nhân dân TP Hà Nội" khi phát hành lại thông tin từ website này.
+            Ghi rõ nguồn "Cổng TTĐT Tòa án nhân dân TP Hà Nội" khi phát hành lại thông tin từ website này.
           </div>
         </div>
 
@@ -114,8 +114,8 @@
     <!-- Bottom Copyright -->
     <div class="bg-slate-950 border-t border-slate-800 py-3.5 sm:py-4 px-3 sm:px-6 text-center text-xs text-slate-400">
       <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2">
-        <p>© 2026 Bản quyền thuộc về Viện kiểm sát nhân dân thành phố Hà Nội.</p>
-        <p class="text-[10px] sm:text-[11px] text-lemon-400/80 font-mono">Hệ thống Cổng thông tin điện tử VKSND TP Hà Nội</p>
+        <p>© 2026 Bản quyền thuộc về Tòa án nhân dân thành phố Hà Nội.</p>
+        <p class="text-[10px] sm:text-[11px] text-lemon-400/80 font-mono">Hệ thống Cổng thông tin điện tử TAND TP Hà Nội</p>
       </div>
     </div>
   </footer>

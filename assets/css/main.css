@@ -26,16 +26,16 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #99b000;
+  background: #cca913;
 }
 
 /* Yellow lime active glow line */
 .lemon-line {
-  background: linear-gradient(90deg, #c2dd02 0%, #dbf40b 50%, rgba(219, 244, 11, 0) 100%);
+  background: linear-gradient(90deg, #ebd626 0%, #FFF44F 50%, rgba(255, 244, 79, 0) 100%);
 }
 
 .lemon-badge {
-  background-color: #dbf40b;
+  background-color: #FFF44F;
   color: #1a2202;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -49,9 +49,9 @@
 }
 
 .glass-lemon {
-  background: rgba(219, 244, 11, 0.12);
+  background: rgba(255, 244, 79, 0.15);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(219, 244, 11, 0.25);
+  border: 1px solid rgba(255, 244, 79, 0.35);
 }
 
 .glass-card {

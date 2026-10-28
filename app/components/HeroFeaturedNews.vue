@@ -32,7 +32,7 @@ const filteredSubHotNews = computed(() => {
                 Cập nhật 24/7
               </span>
             </h2>
-            <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Bản tin thông tin chính thống của Viện kiểm sát nhân dân thành phố Hà Nội</p>
+            <p class="text-[11px] sm:text-xs text-slate-500 font-medium">Bản tin thông tin chính thống của Tòa án nhân dân thành phố Hà Nội</p>
           </div>
         </div>
 
@@ -48,13 +48,13 @@ const filteredSubHotNews = computed(() => {
             Tất cả tin tức
           </button>
           <button
-            @click="activeFilter = 'quyền công tố'"
+            @click="activeFilter = 'xét xử'"
             class="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full transition-all duration-200 whitespace-nowrap transform active:scale-95 text-[11px] sm:text-xs"
-            :class="activeFilter === 'quyền công tố' 
+            :class="activeFilter === 'xét xử' 
               ? 'bg-white text-navy-950 font-black shadow-sm' 
               : 'text-slate-600 hover:text-navy-900'"
           >
-            Thực hành quyền công tố
+            Hoạt động xét xử
           </button>
           <button
             @click="activeFilter = 'tư pháp'"
@@ -88,7 +88,7 @@ const filteredSubHotNews = computed(() => {
                 <img
                   :src="hotSpotlightNews.imageUrl"
                   :alt="hotSpotlightNews.title"
-                  @error="(e: any) => e.target.src = '/images/vksnd_hanoi_facade.jpg'"
+                  @error="(e: any) => e.target.src = '/images/tand_hanoi_facade.jpg'"
                   class="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-500 ease-out"
                 />
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-transparent to-transparent"></div>
@@ -182,7 +182,7 @@ const filteredSubHotNews = computed(() => {
                   <img
                     :src="sub.imageUrl"
                     :alt="sub.title"
-                    @error="(e: any) => e.target.src = '/images/vksnd_courtroom_hall.jpg'"
+                    @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'"
                     class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                   />
                   <!-- Sub tag -->
@@ -290,18 +290,18 @@ const filteredSubHotNews = computed(() => {
             </div>
           </div>
 
-          <!-- Quick Box: Lời Bác Hồ dạy cán bộ kiểm sát - Tươi sáng, trang nghiêm với nền vàng chanh thanh thoát -->
+          <!-- Quick Box: Lời Bác Hồ dạy cán bộ Tòa án - Tươi sáng, trang nghiêm với nền vàng chanh thanh thoát -->
           <div class="reveal-right delay-200 bg-gradient-to-r from-lemon-100/90 via-lemon-50 to-amber-50/80 p-3.5 sm:p-4 rounded-xl text-navy-950 border-l-4 border-lemon-500 border border-lemon-200 shadow-sm">
             <div class="flex items-center gap-2 text-amber-900 text-xs font-black mb-1 uppercase tracking-wider">
               <svg class="w-4 h-4 text-amber-700 animate-pulse flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a10.99 10.99 0 00-.25 2.349v3.6a1 1 0 00.553.894l5 2.5a1 1 0 00.894 0l5-2.5a1 1 0 00.553-.894v-3.6a10.99 10.99 0 00-.25-2.349l2.644-1.131a1 1 0 000-1.84l-7-3z"/>
               </svg>
-              <span class="text-[11px] sm:text-xs">5 ĐỨC TÍNH NGƯỜI CÁN BỘ KIỂM SÁT</span>
+              <span class="text-[11px] sm:text-xs">LỜI BÁC HỒ DẠY CÁN BỘ TÒA ÁN</span>
             </div>
             <p class="text-[11px] sm:text-xs text-slate-800 italic leading-relaxed">
-              "Cán bộ Kiểm sát phải: <strong class="text-red-700 font-black">Công minh</strong> - <strong class="text-red-700 font-black">Chính trực</strong> - <strong class="text-red-700 font-black">Khách quan</strong> - <strong class="text-red-700 font-black">Thận trọng</strong> - <strong class="text-red-700 font-black">Khiêm tốn</strong>"
+              "Người làm công tác xét xử phải: <strong class="text-red-700 font-black">Phụng công</strong> - <strong class="text-red-700 font-black">Thủ pháp</strong> - <strong class="text-red-700 font-black">Chí công</strong> - <strong class="text-red-700 font-black">Vô tư</strong> với phương châm <strong class="text-navy-950 font-black">"Gần dân, hiểu dân, giúp dân, học dân"</strong>"
             </p>
-            <span class="block text-right text-[10px] sm:text-[11px] text-amber-900 mt-1.5 font-extrabold tracking-wide">- Chủ tịch Hồ Chí Minh (1960)</span>
+            <span class="block text-right text-[10px] sm:text-[11px] text-amber-900 mt-1.5 font-extrabold tracking-wide">- Chủ tịch Hồ Chí Minh</span>
           </div>
         </div>
 

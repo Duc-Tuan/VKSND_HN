@@ -4,8 +4,8 @@
     <!-- Architectural Headquarters Background Image - Daylight & Bright -->
     <div class="absolute inset-0 z-0">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Tr%E1%BB%A5_s%E1%BB%9F_Vi%E1%BB%87n_ki%E1%BB%83m_s%C3%A1t_nh%C3%A2n_d%C3%A2n_t%E1%BB%91i_cao.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=original"
-        alt="Trụ sở Viện kiểm sát nhân dân"
+        src="/images/tand_hanoi_facade.jpg"
+        alt="Trụ sở Tòa án nhân dân thành phố Hà Nội"
         class="w-full h-full object-cover object-right md:object-center opacity-40 md:opacity-50 scale-100 filter brightness-105 contrast-105" />
       <!-- Fresh, Bright Daylight Multi-Stop Gradient Overlays -->
       <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 md:via-white/85 to-white/40"></div>
@@ -19,15 +19,15 @@
         <!-- Left: Official Institutional Identity (Logo & Typography) -->
         <div class="flex items-center gap-3.5 sm:gap-5 md:gap-6 text-left w-full lg:w-auto">
 
-          <!-- Official VKSND Emblem with Brilliant Lemon-Yellow Aura -->
+          <!-- Official TAND Emblem with Brilliant Lemon-Yellow Aura - Hình vuông bo góc chuẩn đẹp -->
           <a href="/" class="group flex-shrink-0 transition-transform duration-300 hover:scale-105"
-            title="Trang chủ VKSND TP Hà Nội">
+            title="Trang chủ TAND TP Hà Nội">
             <div
-              class="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full p-1 bg-gradient-to-b from-lemon-400 via-amber-400 to-lemon-500 shadow-xl shadow-lemon-500/20">
+              class="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-2xl p-1 bg-gradient-to-b from-lemon-400 via-amber-400 to-lemon-500 shadow-xl shadow-lemon-500/20">
               <div
-                class="w-full h-full rounded-full bg-white flex items-center justify-center p-1 overflow-hidden shadow-inner">
-                <img src="https://vksndtc.gov.vn/Publishing_Resources/web/assets/img/logo.png"
-                  alt="Logo Viện kiểm sát nhân dân" class="w-full h-full object-contain drop-shadow" />
+                class="w-full h-full rounded-xl bg-white flex items-center justify-center p-1.5 overflow-hidden shadow-inner">
+                <img src="https://hanoi.toaan.gov.vn/webcenter/oracle/webcenter/siteresources/scopedMD/shared/portaltinh/images/logo.png"
+                  alt="Logo Tòa án nhân dân thành phố Hà Nội" class="w-full h-full object-contain drop-shadow" />
               </div>
             </div>
           </a>
@@ -38,13 +38,13 @@
               <span class="w-2.5 h-2.5 rounded-full bg-red-600 shadow-sm"></span>
               <p
                 class="text-[11px] sm:text-xs md:text-sm font-black tracking-[0.15em] text-red-700 uppercase leading-none">
-                VIỆN KIỂM SÁT NHÂN DÂN TỐI CAO
+                TÒA ÁN NHÂN DÂN TỐI CAO
               </p>
             </div>
 
             <h1
               class="text-lg sm:text-2xl md:text-3xl lg:text-[32px] font-black text-navy-950 tracking-tight leading-tight uppercase drop-shadow-sm">
-              VIỆN KIỂM SÁT NHÂN DÂN <span
+              TÒA ÁN NHÂN DÂN <span
                 class="text-amber-600 bg-gradient-to-r from-amber-600 to-amber-700 bg-clip-text text-transparent">THÀNH
                 PHỐ HÀ NỘI</span>
             </h1>
@@ -56,7 +56,7 @@
               </span>
               <span class="hidden sm:inline text-slate-400">•</span>
               <span class="hidden sm:inline text-[10px] sm:text-xs text-slate-600 font-semibold tracking-wide">
-                HANOI PEOPLE'S PROCURACY ELECTRONIC PORTAL
+                HANOI PEOPLE'S COURT ELECTRONIC PORTAL
               </span>
             </div>
           </div>
@@ -98,7 +98,7 @@
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
-                <span>Tố giác tội phạm</span>
+                <span>Nộp đơn trực tuyến</span>
               </a>
             </div>
           </div>
@@ -108,15 +108,15 @@
       </div>
     </div>
 
-    <!-- Official Motto Ribbon (10 Chữ vàng Bác Hồ dạy - Đậm đà bản sắc VÀNG CHANH) -->
+    <!-- Official Motto Ribbon (Lời Bác dạy cán bộ Tòa án nhân dân) -->
     <div
       class="relative z-10 w-full bg-gradient-to-r from-lemon-400 via-lemon-300 to-lemon-400 border-y-2 border-lemon-400 py-2 px-4 shadow-sm">
       <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 text-center">
         <span class="text-amber-800 text-xs sm:text-sm">★</span>
         <p class="text-[11px] sm:text-xs md:text-sm font-black text-navy-950 tracking-wide uppercase">
-          Lời Bác dạy cán bộ Kiểm sát:
+          Lời Bác dạy cán bộ Tòa án:
           <span class="underline decoration-red-600 decoration-2 underline-offset-4 ml-1">
-            "Công minh - Chính trực - Khách quan - Thận trọng - Khiêm tốn"
+            "Phụng công, thủ pháp, chí công, vô tư" - "Gần dân, hiểu dân, giúp dân, học dân"
           </span>
         </p>
         <span class="text-amber-800 text-xs sm:text-sm">★</span>

@@ -74,7 +74,7 @@ defineEmits(['close'])
       <div class="p-5">
         <h3 class="text-sm sm:text-base font-bold text-white mb-2">{{ video.title }}</h3>
         <p class="text-xs text-slate-400">
-          Phát sóng chuyên mục "Pháp luật & Đời sống" - Ban Biên tập Cổng thông tin điện tử Viện kiểm sát nhân dân thành phố Hà Nội.
+          Phát sóng chuyên mục "Pháp đình & Công lý" - Ban Biên tập Cổng thông tin điện tử Tòa án nhân dân thành phố Hà Nội.
         </p>
       </div>
     </div>
