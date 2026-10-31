@@ -34,14 +34,14 @@ const handleLogin = (e: Event) => {
 
     <!-- Modal Box -->
     <div class="relative bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border-2 border-lemon-400 z-10 animate-scaleUp my-auto">
-      <!-- Top Decorative Lemon Bar -->
-      <div class="h-2 bg-gradient-to-r from-lemon-400 via-amber-400 to-lemon-500"></div>
+      <!-- Top Decorative Bar -->
+      <div class="h-2 bg-gradient-to-r from-lemon-500 via-lemon-400 to-amber-500"></div>
 
-      <!-- Header with Logo - Tươi sáng, phong cách vàng chanh -->
-      <div class="p-4 sm:p-6 bg-gradient-to-r from-lemon-400 via-lemon-300 to-amber-300 text-navy-950 relative">
+      <!-- Header with Logo - Trang nghiêm, phong cách đỏ tư pháp -->
+      <div class="p-4 sm:p-6 bg-gradient-to-r from-lemon-500 via-lemon-400 to-red-700 text-white relative">
         <button 
           @click="$emit('close')" 
-          class="absolute top-3.5 right-3.5 text-slate-800 hover:text-black p-1.5 rounded-full hover:bg-lemon-400/80 transition-colors"
+          class="absolute top-3.5 right-3.5 text-white/80 hover:text-white p-1.5 rounded-full hover:bg-black/20 transition-colors"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
@@ -49,29 +49,27 @@ const handleLogin = (e: Event) => {
         </button>
 
         <div class="flex items-center gap-3">
-          <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl p-0.5 bg-white shadow-md flex items-center justify-center flex-shrink-0 border border-lemon-400">
-            <div class="w-full h-full rounded-lg bg-white flex items-center justify-center p-0.5">
-              <img
-                src="https://hanoi.toaan.gov.vn/webcenter/oracle/webcenter/siteresources/scopedMD/shared/portaltinh/images/logo.png"
-                alt="Logo TAND"
-                class="w-full h-full object-contain"
-              />
-            </div>
+          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
+            <img
+              src="/images/logo_tand.png"
+              alt="Logo TAND"
+              class="w-full h-full object-contain filter drop-shadow-md"
+            />
           </div>
           <div>
-            <h3 class="text-sm sm:text-base font-black text-navy-950">ĐĂNG NHẬP HỆ THỐNG</h3>
-            <p class="text-[11px] sm:text-xs text-slate-800 font-bold">Cổng TTĐT TAND TP Hà Nội</p>
+            <h3 class="text-sm sm:text-base font-black text-white">ĐĂNG NHẬP HỆ THỐNG</h3>
+            <p class="text-[11px] sm:text-xs text-yellow-300 font-bold">Cổng TTĐT TAND TP Hà Nội</p>
           </div>
         </div>
 
         <!-- Tabs -->
-        <div class="grid grid-cols-2 gap-2 mt-4 sm:mt-5 p-1 bg-lemon-200/80 rounded-xl text-xs font-bold border border-lemon-400/60">
+        <div class="grid grid-cols-2 gap-2 mt-4 sm:mt-5 p-1 bg-black/20 rounded-xl text-xs font-bold border border-white/20">
           <button
             @click="activeTab = 'officer'"
             class="py-2 px-1 rounded-lg transition-all flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold"
             :class="activeTab === 'officer' 
-              ? 'bg-navy-950 text-lemon-300 font-black shadow-md' 
-              : 'text-slate-800 hover:text-black hover:bg-lemon-300/60'"
+              ? 'bg-white text-lemon-400 font-black shadow-md' 
+              : 'text-white/90 hover:text-white hover:bg-white/10'"
           >
             <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -82,8 +80,8 @@ const handleLogin = (e: Event) => {
             @click="activeTab = 'citizen'"
             class="py-2 px-1 rounded-md transition-all flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs"
             :class="activeTab === 'citizen' 
-              ? 'bg-lemon-400 text-navy-950 font-bold shadow-sm' 
-              : 'text-slate-300 hover:text-white'"
+              ? 'bg-white text-lemon-400 font-bold shadow-sm' 
+              : 'text-white/90 hover:text-white hover:bg-white/10'"
           >
             <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
@@ -148,7 +146,7 @@ const handleLogin = (e: Event) => {
 
           <button
             type="submit"
-            class="w-full py-2.5 px-4 rounded-lg bg-lemon-400 hover:bg-lemon-300 text-navy-950 font-black text-xs uppercase tracking-wide transition-all shadow-md hover:shadow-lemon-glow flex items-center justify-center gap-2 active:scale-95"
+            class="w-full py-2.5 px-4 rounded-lg bg-lemon-400 hover:bg-lemon-500 text-white font-black text-xs uppercase tracking-wide transition-all shadow-md hover:shadow-lemon-glow flex items-center justify-center gap-2 active:scale-95"
           >
             <span v-if="!loginSuccess">Đăng nhập tài khoản ngành</span>
             <span v-else class="text-emerald-950 font-bold flex items-center gap-1">

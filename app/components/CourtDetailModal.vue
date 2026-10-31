@@ -22,7 +22,7 @@ defineEmits(['close'])
       <!-- Header -->
       <div class="bg-navy-950 text-white p-5 border-b-2 border-lemon-400 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-lemon-400 text-navy-950">
+          <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-lemon-400 text-white">
             {{ court.caseType }} - {{ court.level }}
           </span>
           <span class="text-xs text-slate-300 font-mono">{{ court.caseNumber }}</span>
@@ -66,7 +66,7 @@ defineEmits(['close'])
           </div>
           <div class="flex items-center justify-between">
             <span class="text-slate-500">Trạng thái hiện tại:</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-lemon-100 text-lemon-900 border border-lemon-400">
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-lemon-50 text-lemon-700 border border-lemon-300">
               {{ court.status }}
             </span>
           </div>

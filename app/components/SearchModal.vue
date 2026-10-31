@@ -81,7 +81,7 @@ const handleSelect = (item: any) => {
             v-for="kw in ['Số hóa chứng cứ', 'Lịch xét xử', 'Tiếp công dân', 'Tố giác tội phạm', 'Tuyển dụng', 'Thông báo 152']"
             :key="kw"
             @click="searchQuery = kw"
-            class="px-2.5 py-1 rounded-full text-xs bg-slate-100 hover:bg-lemon-100 text-slate-700 hover:text-navy-950 border border-slate-200 transition-colors"
+            class="px-2.5 py-1 rounded-full text-xs bg-slate-100 hover:bg-lemon-50 text-slate-700 hover:text-lemon-700 border border-slate-200 transition-colors"
           >
             {{ kw }}
           </button>

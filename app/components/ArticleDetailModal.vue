@@ -34,7 +34,7 @@ const printArticle = () => {
       <!-- Header Bar with Lemon Accent -->
       <div class="bg-navy-950 text-white px-6 py-4 flex items-center justify-between border-b-2 border-lemon-400">
         <div class="flex items-center gap-2">
-          <span class="px-2.5 py-0.5 rounded text-[11px] font-bold uppercase bg-lemon-400 text-navy-950">
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-bold uppercase bg-lemon-400 text-white">
             {{ article.category }}
           </span>
           <span class="text-xs text-slate-300">| {{ article.date }} ({{ article.time || '10:00' }})</span>
@@ -91,7 +91,7 @@ const printArticle = () => {
           <!-- AI Audio Reading button -->
           <button 
             @click="toggleSpeech"
-            class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-lemon-400 text-navy-950 font-bold hover:bg-lemon-300 transition-colors shadow-sm"
+            class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-lemon-400 text-white font-bold hover:bg-lemon-500 transition-colors shadow-sm"
           >
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414z" clip-rule="evenodd"/>

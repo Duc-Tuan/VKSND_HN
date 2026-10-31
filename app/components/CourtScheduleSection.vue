@@ -23,7 +23,7 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
     case 'Đang xử':
       return 'bg-amber-100 text-amber-900 border-amber-300 animate-pulse'
     case 'Sắp diễn ra':
-      return 'bg-lemon-100 text-navy-950 border-lemon-400 font-bold'
+      return 'bg-lemon-50 text-lemon-700 border-lemon-300 font-bold'
     case 'Đã tuyên án':
       return 'bg-emerald-100 text-emerald-800 border-emerald-300'
     default:
@@ -33,8 +33,8 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
 </script>
 
 <template>
-  <section id="lich-xet-xu" class="py-6 sm:py-8 bg-white border-y border-slate-200">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6">
+  <section id="lich-xet-xu" class="py-6 sm:py-8 border-y border-amber-900/10">
+    <div class="max-w-[96%] w-full mx-auto px-2 sm:px-4 lg:px-6">
 
       <!-- Section Title & Filter Bar -->
       <div
@@ -80,12 +80,9 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
 
       <!-- Schedule Cards Grid with Smooth Transition (mode out-in prevents stuttering) -->
       <transition name="tab-fade" mode="out-in">
-        <div 
-          :key="selectedType + searchQuery"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4"
-        >
+        <div :key="selectedType + searchQuery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
           <div v-for="court in filteredSchedules" :key="court.id" @click="$emit('openCourtModal', court)"
-            class="group cursor-pointer bg-slate-50 hover:bg-white rounded-xl p-3.5 sm:p-4 border border-slate-200 hover:border-lemon-400 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
+            class="group cursor-pointer bg-white hover:bg-white rounded-xl p-3.5 sm:p-4 border border-slate-200/90 hover:border-lemon-400 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between">
             <div>
               <!-- Top Status & Type Badges (Không méo pill, không gãy vụn chữ) -->
               <div class="flex items-start justify-between gap-2 mb-2.5">
@@ -94,11 +91,14 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
                     :class="court.caseType === 'Hình sự' ? 'bg-rose-100 text-rose-800 border border-rose-200' : 'bg-blue-100 text-blue-800 border border-blue-200'">
                     {{ court.caseType }}
                   </span>
-                  <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap">
+                  <span
+                    class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200 whitespace-nowrap">
                     {{ court.level }}
                   </span>
                 </div>
-                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold border whitespace-nowrap flex-shrink-0 shadow-sm" :class="getStatusBadge(court.status)">
+                <span
+                  class="px-2.5 py-0.5 rounded-full text-[10px] font-bold border whitespace-nowrap flex-shrink-0 shadow-sm"
+                  :class="getStatusBadge(court.status)">
                   {{ court.status }}
                 </span>
               </div>
@@ -165,9 +165,9 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
 
       <!-- Bottom Banner Notice -->
       <div
-        class="mt-5 sm:mt-6 p-3 rounded-lg bg-lemon-50 border border-lemon-300/80 flex flex-col sm:flex-row items-center justify-between text-xs text-navy-950 gap-2 text-center sm:text-left">
+        class="mt-5 sm:mt-6 p-3 rounded-lg bg-lemon-50 border border-lemon-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-800 gap-2 text-center sm:text-left">
         <div class="flex items-center gap-2">
-          <svg class="w-4 h-4 text-lemon-700 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+          <svg class="w-4 h-4 text-lemon-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd"
               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
               clip-rule="evenodd" />
@@ -176,7 +176,7 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
             CCCD gắn chip khi tham dự phiên tòa.</span>
         </div>
         <a href="#tra-cuu"
-          class="font-bold text-lemon-800 hover:text-navy-950 underline whitespace-nowrap text-[11px] sm:text-xs">
+          class="font-bold text-lemon-700 hover:text-lemon-800 underline whitespace-nowrap text-[11px] sm:text-xs">
           Quy chế nội quy phòng xử án ›
         </a>
       </div>
@@ -190,10 +190,12 @@ const getStatusBadge = (status: CourtScheduleItem['status']) => {
 .tab-fade-leave-active {
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
+
 .tab-fade-enter-from {
   opacity: 0;
   transform: translateY(6px);
 }
+
 .tab-fade-leave-to {
   opacity: 0;
   transform: translateY(-6px);

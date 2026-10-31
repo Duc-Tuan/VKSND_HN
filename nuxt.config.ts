@@ -13,13 +13,13 @@ export default defineNuxtConfig({
           name: 'description',
           content: 'Cổng thông tin điện tử Tòa Án Nhân Dân Thành Phố Hà Nội - Cung cấp tin tức sự kiện, lịch xét xử, thông báo, hướng dẫn thủ tục tư pháp và dịch vụ công trực tuyến.'
         },
-        { name: 'theme-color', content: '#FFF44F' }
+        { name: 'theme-color', content: '#a41600' }
       ],
       link: [
         {
           rel: 'icon',
           type: 'image/png',
-          href: 'https://hanoi.toaan.gov.vn/webcenter/oracle/webcenter/siteresources/scopedMD/shared/portaltinh/images/logo.png'
+          href: '/images/logo_tand.png'
         }
       ]
     }

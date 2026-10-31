@@ -8,11 +8,26 @@
   html {
     font-family: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: #1e293b;
-    background-color: #f8fafc;
+    background-color: #faf3e8;
+    background-image: url('/images/site_bg_pattern.png');
+    background-repeat: repeat;
+    background-size: 138px 202px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  body {
+    background-color: transparent;
+    min-height: 100vh;
+  }
+}
+
+.site-pattern-bg {
+  background-color: #faf3e8;
+  background-image: url('/images/site_bg_pattern.png');
+  background-repeat: repeat;
+  background-size: 138px 202px;
 }
 
 /* Custom scrollbar */
@@ -24,23 +39,25 @@
   background: #0b1e38;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FFF44F;
+  background: #a41600;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ebd626;
+  background: #861200;
 }
 
-/* Yellow lime active glow line */
-.lemon-line {
-  background: linear-gradient(90deg, #ebd626 0%, #FFF44F 50%, rgba(255, 244, 79, 0) 100%);
+/* Red judicial line & badges */
+.lemon-line,
+.primary-line {
+  background: linear-gradient(90deg, #861200 0%, #a41600 50%, rgba(164, 22, 0, 0) 100%);
 }
 
-.lemon-badge {
-  background-color: #FFF44F;
-  color: #1a2202;
+.lemon-badge,
+.primary-badge {
+  background-color: #a41600;
+  color: #ffffff;
   font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 /* Glassmorphism helpers */
@@ -50,10 +67,11 @@
   -webkit-backdrop-filter: blur(12px);
 }
 
-.glass-lemon {
-  background: rgba(255, 244, 79, 0.15);
+.glass-lemon,
+.glass-primary {
+  background: rgba(164, 22, 0, 0.08);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 244, 79, 0.35);
+  border: 1px solid rgba(164, 22, 0, 0.25);
 }
 
 .glass-card {

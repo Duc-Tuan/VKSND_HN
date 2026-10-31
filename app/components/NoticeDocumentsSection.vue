@@ -13,8 +13,8 @@ const filteredNotices = computed(() => {
 </script>
 
 <template>
-  <section id="thong-bao" class="py-6 sm:py-8 bg-slate-50 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-3 sm:px-6">
+  <section id="thong-bao" class="py-6 sm:py-8 overflow-hidden">
+    <div class="max-w-[96%] w-full mx-auto px-2 sm:px-4 lg:px-6">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6">
 
         <!-- Left Column: THÔNG BÁO & VĂN BẢN CHỈ ĐẠO ĐIỀU HÀNH (8 Cột) -->
@@ -51,7 +51,7 @@ const filteredNotices = computed(() => {
               <div class="flex items-start gap-2.5 sm:gap-3 flex-1 min-w-0">
                 <!-- Document Icon -->
                 <div
-                  class="w-7 h-7 sm:w-8 sm:h-8 rounded bg-lemon-100 text-lemon-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-lemon-400 group-hover:text-navy-950 transition-colors">
+                  class="w-7 h-7 sm:w-8 sm:h-8 rounded bg-lemon-100 text-lemon-700 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-lemon-400 group-hover:text-white transition-colors">
                   <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -62,7 +62,7 @@ const filteredNotices = computed(() => {
                 <div class="min-w-0 flex-1">
                   <div class="flex items-center gap-1.5 sm:gap-2 mb-1 flex-wrap">
                     <span
-                      class="px-1.5 sm:px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono font-bold bg-navy-900 text-lemon-300">
+                      class="px-1.5 sm:px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono font-bold bg-navy-900 text-white">
                       {{ notice.code }}
                     </span>
                     <span
@@ -84,7 +84,7 @@ const filteredNotices = computed(() => {
               <!-- Download Button -->
               <div class="flex items-center gap-2 flex-shrink-0 self-end sm:self-center">
                 <button
-                  class="px-2.5 py-1 rounded bg-slate-100 hover:bg-lemon-400 text-slate-700 hover:text-navy-950 text-[11px] sm:text-xs font-semibold flex items-center gap-1 border border-slate-200 transition-all active:scale-95 shadow-sm"
+                  class="px-2.5 py-1 rounded bg-slate-100 hover:bg-lemon-400 text-slate-700 hover:text-white text-[11px] sm:text-xs font-semibold flex items-center gap-1 border border-slate-200 transition-all active:scale-95 shadow-sm"
                   title="Tải tệp văn bản đính kèm">
                   <svg class="w-3.5 h-3.5 text-lemon-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -114,8 +114,8 @@ const filteredNotices = computed(() => {
         <div class="reveal-right lg:col-span-4 space-y-4">
           <!-- Tiếp công dân Box - Tươi sáng, chuẩn mực cơ quan tư pháp -->
           <div
-            class="bg-gradient-to-br from-lemon-50/90 via-white to-lemon-100/70 text-slate-900 rounded-xl p-4 sm:p-5 border-2 border-lemon-400 shadow-sm">
-            <div class="flex items-center gap-2 pb-2 mb-3 border-b border-lemon-300">
+            class="bg-gradient-to-br from-lemon-50/90 via-white to-lemon-50/60 text-slate-900 rounded-xl p-4 sm:p-5 border-2 border-lemon-400 shadow-sm">
+            <div class="flex items-center gap-2 pb-2 mb-3 border-b border-lemon-200">
               <div class="w-2.5 h-2.5 rounded-full bg-red-600 animate-ping"></div>
               <h3 class="text-xs font-black uppercase text-navy-950 tracking-wide">
                 LỊCH TIẾP CÔNG DÂN ĐỊNH KỲ
@@ -123,14 +123,14 @@ const filteredNotices = computed(() => {
             </div>
 
             <p class="text-xs text-slate-700 mb-3">
-              Chánh án TAND TP Hà Nội tiếp công dân vào <strong class="text-red-700">thứ Năm tuần thứ 3</strong>
+              Chánh án TAND TP Hà Nội tiếp công dân vào <strong class="text-lemon-700">thứ Năm tuần thứ 3</strong>
               hàng tháng.
             </p>
 
-            <div class="bg-white rounded-lg p-3 text-xs space-y-2 border border-lemon-300 shadow-sm mb-3">
+            <div class="bg-white rounded-lg p-3 text-xs space-y-2 border border-lemon-200 shadow-sm mb-3">
               <div class="flex items-center justify-between text-slate-600">
                 <span>Phiên tiếp tiếp theo:</span>
-                <strong class="text-amber-800 font-mono font-black">19/11/2026</strong>
+                <strong class="text-lemon-700 font-mono font-black">19/11/2026</strong>
               </div>
               <div class="flex items-center justify-between text-slate-600">
                 <span>Thời gian:</span>
@@ -143,23 +143,24 @@ const filteredNotices = computed(() => {
             </div>
 
             <a href="#tiep-dan"
-              class="w-full block text-center py-2 px-3 rounded-lg bg-lemon-400 hover:bg-lemon-300 text-navy-950 font-black text-xs uppercase transition-all shadow-sm active:scale-95 border border-lemon-500/40">
+              class="w-full block text-center py-2 px-3 rounded-lg bg-lemon-400 hover:bg-lemon-500 text-white font-black text-xs uppercase transition-all shadow-sm active:scale-95 border border-lemon-500/40">
               Đăng ký tiếp công dân trực tuyến
             </a>
           </div>
 
-          <!-- Đường dây nóng tố giác tội phạm mini box -->
+          <!-- Tiếp nhận phản ánh chống tiêu cực mini box -->
           <div class="reveal-scale delay-150 bg-white rounded-xl p-4 border-2 border-lemon-400 shadow-sm">
             <h4 class="text-xs font-bold text-navy-950 uppercase flex items-center gap-1.5 mb-2">
-              <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
-              ĐƯỜNG DÂY NÓNG CHỐNG THAM NHŨNG & TIÊU CỰC
+              <span class="w-2 h-2 rounded-full bg-lemon-500 animate-pulse"></span>
+              TIẾP NHẬN PHẢN ÁNH CHỐNG TIÊU CỰC
             </h4>
             <p class="text-xs text-slate-600 mb-2">
               Ban Thanh tra TAND Tối cao và Tòa án nhân dân TP Hà Nội tiếp nhận 24/7:
             </p>
             <div class="flex items-center justify-between p-2 rounded bg-slate-50 border border-slate-200">
-              <span class="text-xs font-bold text-navy-950">Điện thoại nóng:</span>
-              <span class="text-sm font-extrabold text-red-600 font-mono">0243.825.5999</span>
+              <span class="text-xs font-bold text-navy-950">Email tiếp nhận:</span>
+              <a href="mailto:HaNoi@toaan.gov.vn"
+                class="text-xs font-black text-lemon-700 hover:underline font-mono">HaNoi@toaan.gov.vn</a>
             </div>
           </div>
         </div>

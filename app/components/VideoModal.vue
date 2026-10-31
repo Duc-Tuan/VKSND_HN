@@ -20,8 +20,8 @@ defineEmits(['close'])
       <!-- Header -->
       <div class="p-4 border-b border-navy-800 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-lemon-400 text-navy-950">
-            Truyền hình Kiểm sát
+          <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-lemon-400 text-white">
+            Truyền hình Tòa án
           </span>
           <span class="text-xs text-slate-300 font-mono">{{ video.duration }}</span>
         </div>
@@ -44,13 +44,13 @@ defineEmits(['close'])
         <div class="absolute inset-0 flex flex-col justify-between p-4 bg-gradient-to-t from-black/80 via-transparent to-black/40">
           <div class="flex items-center justify-between text-xs text-slate-300">
             <span>Đang phát: {{ video.title }}</span>
-            <span class="text-lemon-400 font-mono">1080p HD</span>
+            <span class="text-yellow-400 font-mono">1080p HD</span>
           </div>
 
           <div class="flex items-center justify-center">
             <button class="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-lemon-400/35 backdrop-blur-md border-2 border-lemon-400/80 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-lemon-400/50 transition-all duration-300">
               <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white flex items-center justify-center shadow-md border border-slate-100">
-                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-lemon-500 fill-lemon-500 drop-shadow-sm" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-lemon-400 fill-lemon-400 drop-shadow-sm" viewBox="0 0 24 24">
                   <path d="M8 5.5v13l10-6.5-10-6.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
                 </svg>
               </div>

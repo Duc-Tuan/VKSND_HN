@@ -5,19 +5,32 @@ export default <Partial<Config>>{
   theme: {
     extend: {
       colors: {
-        // Tông màu chủ đạo VÀNG CHANH #FFF44F (Lemon Yellow) theo yêu cầu
+        // Tông màu chủ đạo ĐỎ TƯ PHÁP #a41600 (Judicial Red) theo yêu cầu
         lemon: {
-          50: '#fffef0',  // Kem vàng chanh thanh nhẹ tinh tế
-          100: '#fffccb', // Vàng chanh phấn nhạt
-          200: '#fff9a6', // Vàng chanh pastel mềm mại
-          300: '#fff777', // Vàng chanh sáng
-          400: '#FFF44F', // MÀU CHỦ ĐẠO CHÍNH THỨC (Lemon Yellow #FFF44F)
-          500: '#ebd626', // Tông đậm hơn làm viền/nhấn
-          600: '#cca913', // Vàng chanh sẫm
-          700: '#a37e10', // Màu chữ/icon sắc nét
-          800: '#836214',
-          900: '#6f5117',
-          950: '#402c08',
+          50: '#fff5f5',  // Đỏ phớt rất nhẹ cho nền trích dẫn / card
+          100: '#fee2e2', // Đỏ nhạt
+          200: '#fecaca', // Viền đỏ nhạt
+          300: '#c81e02', // Đỏ ruby sáng (dùng cho gradient/hover)
+          400: '#a41600', // ★ MÀU CHỦ ĐẠO CHÍNH THỨC (#a41600)
+          500: '#861200', // Đỏ sẫm (hover / viền đậm)
+          600: '#6c1002', // Đỏ đô đậm
+          700: '#a41600', // Màu chữ/icon sắc nét
+          800: '#530f06',
+          900: '#3d0903',
+          950: '#260400',
+        },
+        primary: {
+          50: '#fff5f5',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#c81e02',
+          400: '#a41600', // MÀU CHỦ ĐẠO CHÍNH THỨC (#a41600)
+          500: '#861200',
+          600: '#6c1002',
+          700: '#a41600',
+          800: '#530f06',
+          900: '#3d0903',
+          950: '#260400',
         },
         navy: {
           50: '#f0f5fa',
@@ -38,8 +51,10 @@ export default <Partial<Config>>{
         serif: ['"Merriweather"', 'serif'],
       },
       boxShadow: {
-        'lemon-glow': '0 0 20px -3px rgba(255, 244, 79, 0.45)',
-        'lemon-sm': '0 0 10px -2px rgba(255, 244, 79, 0.3)',
+        'lemon-glow': '0 0 20px -3px rgba(164, 22, 0, 0.45)',
+        'lemon-sm': '0 0 10px -2px rgba(164, 22, 0, 0.3)',
+        'primary-glow': '0 0 20px -3px rgba(164, 22, 0, 0.45)',
+        'primary-sm': '0 0 10px -2px rgba(164, 22, 0, 0.3)',
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',

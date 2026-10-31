@@ -71,10 +71,10 @@ const scrollToTop = () => {
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-slate-50 font-sans selection:bg-lemon-400 selection:text-navy-950 relative">
+  <div class="min-h-screen flex flex-col site-pattern-bg font-sans selection:bg-lemon-400 selection:text-white relative">
     <!-- Top Reading Scroll Progress Indicator (Thanh tiến trình đọc cuộn trang - GPU Accelerated) -->
     <div 
-      class="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-lemon-400 via-amber-300 to-lemon-500 z-50 origin-left pointer-events-none will-change-transform shadow-lemon-sm"
+      class="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-lemon-400 via-amber-400 to-lemon-500 z-50 origin-left pointer-events-none will-change-transform shadow-lemon-sm"
       :style="{ transform: `scaleX(${scrollProgress})` }"
     ></div>
 
@@ -120,7 +120,7 @@ const scrollToTop = () => {
       <button
         v-if="showScrollTop"
         @click="scrollToTop"
-        class="fixed bottom-6 right-6 z-30 p-3 rounded-full bg-lemon-400 hover:bg-lemon-300 text-navy-950 shadow-lemon-glow hover:scale-110 active:scale-95 transition-all border border-lemon-300 animate-floatSoft"
+        class="fixed bottom-6 right-6 z-30 p-3 rounded-full bg-lemon-400 hover:bg-lemon-500 text-white shadow-lemon-glow hover:scale-110 active:scale-95 transition-all border border-lemon-300 animate-floatSoft"
         title="Lên đầu trang"
         aria-label="Lên đầu trang"
       >
