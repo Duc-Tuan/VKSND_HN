@@ -7,14 +7,11 @@ import CourtScheduleSection from '../components/CourtScheduleSection.vue'
 import NoticeDocumentsSection from '../components/NoticeDocumentsSection.vue'
 import PublicServicesSection from '../components/PublicServicesSection.vue'
 import CategoryNewsSection from '../components/CategoryNewsSection.vue'
-import InfographicMediaSection from '../components/InfographicMediaSection.vue'
-import StatsSection from '../components/StatsSection.vue'
 import PartnersSection from '../components/PartnersSection.vue'
 
 // Local Interactive Modals for Court Schedule, Services, and Videos
 import CourtDetailModal from '../components/CourtDetailModal.vue'
 import ServiceModal from '../components/ServiceModal.vue'
-import VideoModal from '../components/VideoModal.vue'
 
 import type { NewsItem, CourtScheduleItem, PublicServiceItem, NoticeItem } from '../data/newsData'
 
@@ -32,11 +29,9 @@ const handleViewNotice = (notice: NoticeItem) => {
 // Modal states for non-article features
 const isCourtModalOpen = ref(false)
 const isServiceModalOpen = ref(false)
-const isVideoModalOpen = ref(false)
 
 const selectedCourt = ref<CourtScheduleItem | null>(null)
 const selectedService = ref<PublicServiceItem | null>(null)
-const selectedVideo = ref<any>(null)
 
 const openCourtModal = (court: CourtScheduleItem) => {
   selectedCourt.value = court
@@ -48,10 +43,6 @@ const openServiceModal = (service: PublicServiceItem) => {
   isServiceModalOpen.value = true
 }
 
-const openVideoModal = (video: any) => {
-  selectedVideo.value = video
-  isVideoModalOpen.value = true
-}
 </script>
 
 <template>
@@ -84,14 +75,6 @@ const openVideoModal = (video: any) => {
       @openArticle="handleOpenArticle"
     />
 
-    <!-- Section 6: Truyền hình Tòa án & Infographic phổ biến pháp luật -->
-    <InfographicMediaSection 
-      @openVideoModal="openVideoModal"
-    />
-
-    <!-- Section 7: Chỉ tiêu công tác & Thành tựu nổi bật TAND Thủ đô -->
-    <StatsSection />
-
     <!-- Section 8: Liên kết cơ quan Đảng & Nhà nước -->
     <PartnersSection />
 
@@ -106,12 +89,6 @@ const openVideoModal = (video: any) => {
       :service="selectedService" 
       :isOpen="isServiceModalOpen" 
       @close="isServiceModalOpen = false" 
-    />
-
-    <VideoModal 
-      :video="selectedVideo" 
-      :isOpen="isVideoModalOpen" 
-      @close="isVideoModalOpen = false" 
     />
   </div>
 </template>
