@@ -31,14 +31,13 @@ interface NavLink {
 }
 
 // Thứ tự menu chính xác theo yêu cầu (KHÔNG CÓ MENU CON):
-// 1. Trang chủ | 2. Giới thiệu | 3. Thông báo | 4. Lịch xét xử | 5. Tin tức sự kiện | 6. Hướng dẫn thủ tục | 7. Đăng nhập
+// 1. Trang chủ | 2. Giới thiệu | 3. Thông báo | 4. Lịch xét xử | 5. Tin tức sự kiện | 6. Đăng nhập
 const navItems: NavLink[] = [
   { name: 'Trang chủ', href: '/' },
   { name: 'Giới thiệu', href: '/#gioi-thieu' },
   { name: 'Thông báo', href: '/#thong-bao' },
   { name: 'Lịch xét xử', href: '/#lich-xet-xu' },
-  { name: 'Tin tức sự kiện', href: '/#tin-tuc' },
-  { name: 'Hướng dẫn thủ tục', href: '/#huong-dan-thu-tuc' }
+  { name: 'Tin tức sự kiện', href: '/#tin-tuc' }
 ]
 
 const handleNavClick = (item: NavLink) => {

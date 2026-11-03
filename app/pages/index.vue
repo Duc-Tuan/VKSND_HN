@@ -5,15 +5,13 @@ import BuildingShowcase from '../components/BuildingShowcase.vue'
 import HeroFeaturedNews from '../components/HeroFeaturedNews.vue'
 import CourtScheduleSection from '../components/CourtScheduleSection.vue'
 import NoticeDocumentsSection from '../components/NoticeDocumentsSection.vue'
-import PublicServicesSection from '../components/PublicServicesSection.vue'
 import CategoryNewsSection from '../components/CategoryNewsSection.vue'
 import PartnersSection from '../components/PartnersSection.vue'
 
-// Local Interactive Modals for Court Schedule, Services, and Videos
+// Local Interactive Modals for Court Schedule
 import CourtDetailModal from '../components/CourtDetailModal.vue'
-import ServiceModal from '../components/ServiceModal.vue'
 
-import type { NewsItem, CourtScheduleItem, PublicServiceItem, NoticeItem } from '../data/newsData'
+import type { NewsItem, CourtScheduleItem, NoticeItem } from '../data/newsData'
 
 const router = useRouter()
 
@@ -28,21 +26,12 @@ const handleViewNotice = (notice: NoticeItem) => {
 
 // Modal states for non-article features
 const isCourtModalOpen = ref(false)
-const isServiceModalOpen = ref(false)
-
 const selectedCourt = ref<CourtScheduleItem | null>(null)
-const selectedService = ref<PublicServiceItem | null>(null)
 
 const openCourtModal = (court: CourtScheduleItem) => {
   selectedCourt.value = court
   isCourtModalOpen.value = true
 }
-
-const openServiceModal = (service: PublicServiceItem) => {
-  selectedService.value = service
-  isServiceModalOpen.value = true
-}
-
 </script>
 
 <template>
@@ -65,30 +54,19 @@ const openServiceModal = (service: PublicServiceItem) => {
       @viewNotice="handleViewNotice"
     />
 
-    <!-- Section 4: Hướng dẫn thủ tục tư pháp & Cổng dịch vụ công -->
-    <PublicServicesSection 
-      @openServiceModal="openServiceModal"
-    />
-
-    <!-- Section 5: Chuyên mục Hoạt động xét xử nghiệp vụ (Án Hình sự, Dân sự, Xây dựng ngành) -->
+    <!-- Section 4: Chuyên mục Hoạt động xét xử nghiệp vụ (Án Hình sự, Dân sự, Xây dựng ngành) -->
     <CategoryNewsSection 
       @openArticle="handleOpenArticle"
     />
 
-    <!-- Section 8: Liên kết cơ quan Đảng & Nhà nước -->
+    <!-- Section 5: Liên kết cơ quan Đảng & Nhà nước -->
     <PartnersSection />
 
-    <!-- Modals for Court Schedule, Online Services, Video Viewer -->
+    <!-- Modals for Court Schedule -->
     <CourtDetailModal 
       :court="selectedCourt" 
       :isOpen="isCourtModalOpen" 
       @close="isCourtModalOpen = false" 
-    />
-
-    <ServiceModal 
-      :service="selectedService" 
-      :isOpen="isServiceModalOpen" 
-      @close="isServiceModalOpen = false" 
     />
   </div>
 </template>

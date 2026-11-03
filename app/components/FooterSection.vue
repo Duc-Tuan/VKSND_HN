@@ -74,14 +74,14 @@
               </a>
             </li>
             <li>
-              <a href="#huong-dan-thu-tuc"
+              <a href="#thong-bao"
                 class="hover:text-red-300 transition-colors flex items-center gap-2 font-medium">
                 <span class="text-red-400 text-base font-black flex-shrink-0">›</span>
                 <span>Hướng dẫn thủ tục & Biểu mẫu tố tụng</span>
               </a>
             </li>
             <li>
-              <a href="#huong-dan-thu-tuc"
+              <a href="#thong-bao"
                 class="hover:text-red-300 transition-colors flex items-center gap-2 font-medium">
                 <span class="text-red-400 text-base font-black flex-shrink-0">›</span>
                 <span>Nộp đơn khởi kiện, phản ánh</span>

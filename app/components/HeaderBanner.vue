@@ -38,7 +38,7 @@ onUnmounted(() => {
 
     <!-- Main Header Content Container - Rộng sát mép màn hình -->
     <div class="relative z-10 max-w-[96%] w-full mx-auto px-2 sm:px-4 lg:px-6 py-2.5 sm:py-3 lg:py-3.5">
-      <div class="flex flex-col lg:flex-row items-center lg:items-center justify-between gap-3 lg:gap-6">
+      <div class="flex items-center justify-between gap-3 lg:gap-6">
 
         <!-- Left: Official Institutional Identity (Logo & Typography) -->
         <div class="flex items-center gap-3 sm:gap-4 md:gap-5 text-left w-full lg:w-auto">
@@ -78,40 +78,6 @@ onUnmounted(() => {
               <span class="hidden sm:inline text-[10px] sm:text-xs text-slate-600 font-semibold tracking-wide">
                 HANOI PEOPLE'S COURT ELECTRONIC PORTAL
               </span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Right: Official Contact & Quick Citizen Access Plaque -->
-        <div class="hidden lg:flex items-center gap-3 xl:gap-4 flex-shrink-0">
-          <!-- Contact Info Plaque -->
-          <div
-            class="bg-white/95 backdrop-blur-md rounded-xl p-2.5 sm:p-3 border-2 border-lemon-400 shadow-md shadow-lemon-400/10 space-y-1 text-right min-w-[250px]">
-            <div class="text-[11px] text-black font-medium py-2"
-              title="Ô đất 1-VP, Khu chức năng đô thị Nam đường vành đai 3, phường Định Công, thành phố Hà Nội">
-              Địa chỉ: Ô đất 1-VP, Khu đô thị Nam đường vành đai 3, P. Định Công, Hà Nội
-            </div>
-
-            <!-- Quick Service Action Buttons -->
-            <div class="flex items-center justify-end gap-2 pt-2 border-t border-lemon-200">
-              <a href="#huong-dan-thu-tuc"
-                class="px-3 py-2 rounded-md bg-lemon-400 hover:bg-lemon-500 text-white text-[11px] font-black tracking-wide transition-all shadow-sm hover:shadow flex items-center gap-1.5">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                <span>Dịch Vụ Công</span>
-              </a>
-
-              <a href="#huong-dan-thu-tuc"
-                class="px-3 py-2 rounded-md bg-slate-100 hover:bg-slate-200 text-slate-900 border border-slate-300 text-[11px] font-bold transition-all flex items-center gap-1.5">
-                <svg class="w-3.5 h-3.5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                </svg>
-                <span>Nộp đơn khởi kiện</span>
-              </a>
             </div>
           </div>
 
