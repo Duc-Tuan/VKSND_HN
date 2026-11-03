@@ -124,7 +124,7 @@ const printArticle = () => {
             {{ article.content || 'Thực hiện kế hoạch công tác năm 2026, TAND TP Hà Nội tiếp tục đổi mới toàn diện các khâu công tác, đẩy mạnh cải cách tư pháp và nâng cao chất lượng xét xử các loại vụ án, gắn hoạt động tư pháp với việc bảo vệ công lý, quyền con người, quyền công dân và sự phát triển bền vững của Thủ đô.' }}
           </p>
           <p>
-            Trong quá trình thực hiện quyền tư pháp và hoạt động xét xử, Tòa án nhân dân hai cấp thành phố đã chủ động áp dụng đồng bộ các giải pháp nhằm nâng cao chất lượng tranh tụng, tăng cường số hóa tài liệu hồ sơ phiên tòa trực tuyến, bảo đảm xét xử đúng người, đúng tội, đúng pháp luật, không làm oan người vô tội và không bỏ lọt tội phạm.
+            Trong quá trình thực hiện quyền tư pháp và hoạt động xét xử, Tòa án nhân dân hai cấp thành phố đã chủ động áp dụng đồng bộ các giải pháp nhằm nâng cao chất lượng tranh tụng, tăng cường số hóa tài liệu hồ sơ phiên tòa, bảo đảm xét xử đúng người, đúng tội, đúng pháp luật, không làm oan người vô tội và không bỏ lọt tội phạm.
           </p>
           <p>
             Đặc biệt, Ban cán sự Đảng TAND TP Hà Nội chỉ đạo toàn thể Thẩm phán, Thư ký và công chức Tòa án tiếp tục đẩy mạnh học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh gắn với lời dạy của Bác: "Phụng công, thủ pháp, chí công, vô tư" và phương châm "Gần dân, hiểu dân, giúp dân, học dân".

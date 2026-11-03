@@ -118,7 +118,7 @@ const otherVideos = computed(() => mediaVideos.slice(1))
 
             <h3
               class="text-sm sm:text-base font-extrabold text-navy-950 group-hover:text-lemon-700 transition-colors mb-2 leading-snug">
-              Nhận diện 24 phương thức, thủ đoạn lừa đảo trực tuyến phổ biến
+              Nhận diện 24 phương thức, thủ đoạn lừa đảo qua mạng phổ biến
             </h3>
 
             <p class="text-xs text-slate-700 leading-relaxed mb-4">

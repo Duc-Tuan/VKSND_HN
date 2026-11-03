@@ -144,7 +144,7 @@ const filteredNotices = computed(() => {
 
             <a href="#tiep-dan"
               class="w-full block text-center py-2 px-3 rounded-lg bg-lemon-400 hover:bg-lemon-500 text-white font-black text-xs uppercase transition-all shadow-sm active:scale-95 border border-lemon-500/40">
-              Đăng ký tiếp công dân trực tuyến
+              Đăng ký tiếp công dân
             </a>
           </div>
 

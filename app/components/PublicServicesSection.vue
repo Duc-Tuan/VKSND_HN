@@ -5,8 +5,7 @@ const emit = defineEmits(['openServiceModal'])
 </script>
 
 <template>
-  <section id="huong-dan-thu-tuc"
-    class="py-6 sm:py-8 border-b border-amber-900/10 overflow-hidden">
+  <section id="huong-dan-thu-tuc" class="py-6 sm:py-8 border-b border-amber-900/10 overflow-hidden">
     <div class="max-w-[96%] w-full mx-auto px-2 sm:px-4 lg:px-6">
 
       <!-- Section Header with reveal -->
@@ -18,7 +17,7 @@ const emit = defineEmits(['openServiceModal'])
               d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
               clip-rule="evenodd" />
           </svg>
-          HƯỚNG DẪN THỦ TỤC & DỊCH VỤ CÔNG TRỰC TUYẾN
+          HƯỚNG DẪN THỦ TỤC & DỊCH VỤ CÔNG
         </div>
         <h2 class="text-lg sm:text-2xl md:text-3xl font-black text-navy-950 uppercase tracking-tight">
           CỔNG DỊCH VỤ TƯ PHÁP VÌ NHÂN DÂN
@@ -105,8 +104,8 @@ const emit = defineEmits(['openServiceModal'])
               i
             </div>
             <div>
-              <h4 class="text-xs sm:text-sm md:text-base font-extrabold text-navy-950">Quy trình nộp đơn tố giác trực
-                tuyến 3 bước</h4>
+              <h4 class="text-xs sm:text-sm md:text-base font-extrabold text-navy-950">Quy trình nộp đơn tố giác 3 bước
+              </h4>
               <p class="text-[11px] sm:text-xs text-slate-700 font-medium">Nhập thông tin cá nhân > Đính kèm tài liệu
                 chứng cứ > Nhận mã tra cứu qua SMS/Email</p>
             </div>

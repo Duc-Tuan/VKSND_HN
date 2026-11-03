@@ -39,7 +39,7 @@ const handleSubmit = (e: Event) => {
       <div class="bg-navy-950 text-white p-5 border-b-2 border-lemon-400 flex items-center justify-between">
         <div>
           <span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-lemon-400 text-white">
-            Dịch vụ công trực tuyến
+            Dịch vụ công
           </span>
           <h3 class="text-base font-extrabold text-white mt-1">{{ service.title }}</h3>
         </div>
@@ -125,7 +125,7 @@ const handleSubmit = (e: Event) => {
                 type="submit"
                 class="px-5 py-2 rounded-lg bg-lemon-400 hover:bg-lemon-500 text-white font-bold text-xs uppercase shadow-lemon-sm"
               >
-                Gửi hồ sơ trực tuyến
+                Gửi hồ sơ
               </button>
             </div>
           </form>

@@ -65,7 +65,7 @@ const openServiceModal = (service: PublicServiceItem) => {
       @viewNotice="handleViewNotice"
     />
 
-    <!-- Section 4: Hướng dẫn thủ tục tư pháp & Cổng dịch vụ công trực tuyến -->
+    <!-- Section 4: Hướng dẫn thủ tục tư pháp & Cổng dịch vụ công -->
     <PublicServicesSection 
       @openServiceModal="openServiceModal"
     />

@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
           name: 'description',
-          content: 'Cổng thông tin điện tử Tòa Án Nhân Dân Thành Phố Hà Nội - Cung cấp tin tức sự kiện, lịch xét xử, thông báo, hướng dẫn thủ tục tư pháp và dịch vụ công trực tuyến.'
+          content: 'Cổng thông tin điện tử Tòa Án Nhân Dân Thành Phố Hà Nội - Cung cấp tin tức sự kiện, lịch xét xử, thông báo, hướng dẫn thủ tục tư pháp và dịch vụ công.'
         },
         { name: 'theme-color', content: '#a41600' }
       ],

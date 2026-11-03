@@ -84,7 +84,7 @@
               <a href="#huong-dan-thu-tuc"
                 class="hover:text-red-300 transition-colors flex items-center gap-2 font-medium">
                 <span class="text-red-400 text-base font-black flex-shrink-0">›</span>
-                <span>Nộp đơn khởi kiện, phản ánh trực tuyến</span>
+                <span>Nộp đơn khởi kiện, phản ánh</span>
               </a>
             </li>
             <li>
@@ -102,8 +102,7 @@
     <div
       class="bg-slate-950 border-t border-slate-800 py-3.5 sm:py-4 px-3 sm:px-6 text-center text-xs sm:text-sm text-slate-400">
       <div class="max-w-[96%] w-full mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 sm:gap-2">
-        <p>© 2026 Bản quyền thuộc về Tòa án nhân dân thành phố Hà Nội. Ghi rõ nguồn khi phát hành lại thông tin từ
-          website này.</p>
+        <p>© 2026 Bản quyền thuộc về Tòa án nhân dân thành phố Hà Nội.</p>
         <p class="text-xs sm:text-sm font-mono">Hệ thống Cổng thông tin điện tử TAND TP Hà Nội</p>
       </div>
     </div>

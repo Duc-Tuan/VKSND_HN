@@ -33,7 +33,7 @@ const buildingImages: BuildingImage[] = [
   {
     id: 'b-3',
     title: 'Hội trường xét xử & Phòng xử án số hóa TAND',
-    subtitle: 'Hệ thống phòng xử án hiện đại, trang bị công nghệ xét xử trực tuyến',
+    subtitle: 'Hệ thống phòng xử án hiện đại, trang bị công nghệ xét xử số hóa',
     url: '/images/tand_courtroom_hall.jpg',
     description: 'Phòng xử án trang nghiêm với Quốc huy Việt Nam, bàn Hội đồng xét xử chuẩn mực tư pháp và màn hình số hóa hồ sơ tranh tụng điện tử.',
     badge: 'PHÒNG XÉT XỬ TAND',

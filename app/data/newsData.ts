@@ -178,14 +178,14 @@ Hội nghị đã đánh giá cao sự phối hợp chặt chẽ, hiệu quả g
   },
   {
     id: 'time-3',
-    title: 'TAND quận Hai Bà Trưng xét xử trực tuyến đối tượng phạm tội về ma túy đặc biệt nguy hiểm',
-    summary: 'Góp phần trong công tác cải cách tư pháp, ứng dụng công nghệ xét xử trực tuyến, xây dựng Tòa án điện tử Thủ đô.',
-    content: `Tòa án nhân dân quận Hai Bà Trưng, thành phố Hà Nội đã tổ chức phiên tòa xét xử trực tuyến vụ án hình sự đối với bị cáo Nguyễn Xuân Quý phạm tội về ma túy đặc biệt nguy hiểm.
+    title: 'TAND quận Hai Bà Trưng xét xử đối tượng phạm tội về ma túy đặc biệt nguy hiểm',
+    summary: 'Góp phần trong công tác cải cách tư pháp, ứng dụng công nghệ số hóa, xây dựng Tòa án điện tử Thủ đô.',
+    content: `Tòa án nhân dân quận Hai Bà Trưng, thành phố Hà Nội đã tổ chức phiên tòa xét xử vụ án hình sự đối với bị cáo Nguyễn Xuân Quý phạm tội về ma túy đặc biệt nguy hiểm.
 
-Phiên tòa được kết nối trực tuyến từ điểm cầu trung tâm tại trụ sở TAND quận Hai Bà Trưng tới điểm cầu thành phần tại Trại tạm giam số 1 - Công an thành phố Hà Nội. Quá trình xét xử diễn ra trang nghiêm, trật tự, đảm bảo đầy đủ các quyền và lợi ích hợp pháp của bị cáo theo quy định của Bộ luật Tố tụng hình sự.
+Phiên tòa được kết nối từ điểm cầu trung tâm tại trụ sở TAND quận Hai Bà Trưng tới điểm cầu thành phần tại Trại tạm giam số 1 - Công an thành phố Hà Nội. Quá trình xét xử diễn ra trang nghiêm, trật tự, đảm bảo đầy đủ các quyền và lợi ích hợp pháp của bị cáo theo quy định của Bộ luật Tố tụng hình sự.
 
-Việc tổ chức thành công các phiên tòa trực tuyến thể hiện sự chủ động, quyết tâm của TAND quận Hai Bà Trưng trong việc thực hiện Nghị quyết số 33/2021/QH15 của Quốc hội về tổ chức phiên tòa trực tuyến, góp phần nâng cao hiệu quả công tác cải cách tư pháp và xây dựng Tòa án thông minh.`,
-    category: 'Xét xử trực tuyến',
+Việc tổ chức thành công các phiên tòa số hóa thể hiện sự chủ động, quyết tâm của TAND quận Hai Bà Trưng trong việc thực hiện Nghị quyết số 33/2021/QH15 của Quốc hội về tổ chức phiên tòa số hóa, góp phần nâng cao hiệu quả công tác cải cách tư pháp và xây dựng Tòa án thông minh.`,
+    category: 'Xét xử số hóa',
     date: '27/12/2023',
     time: '10:15',
     author: 'TAND quận Hai Bà Trưng',
@@ -195,7 +195,7 @@ Việc tổ chức thành công các phiên tòa trực tuyến thể hiện s�
     source: 'Cổng thông tin điện tử TAND TP Hà Nội',
     sourceUrl: 'https://toaan.hanoi.gov.vn/tin-xet-xu/-/view_content/5238673-toa-an-nhan-dan-quan-hai-ba-trung-xet-xu-truc-tuyen-doi-tuong-pham-toi-ve-ma-tuydac-biet-nguy-hiem-gop-phan-trong-cong-tac-cai-cach-tu-phap-xay-dung-1.html',
     verifiedAgency: 'TAND quận Hai Bà Trưng - TAND TP Hà Nội',
-    officialDocNumber: 'Nghị quyết số 33/2021/QH15 về xét xử trực tuyến'
+    officialDocNumber: 'Nghị quyết số 33/2021/QH15 của Quốc hội'
   },
   {
     id: 'time-4',
@@ -326,8 +326,8 @@ export const noticeDocuments: NoticeItem[] = [
 export const publicServices: PublicServiceItem[] = [
   {
     id: 'ps-1',
-    title: 'Nộp Đơn Khởi Kiện & Tài Liệu Trực Tuyến',
-    desc: 'Tiếp nhận đơn khởi kiện vụ án dân sự, hành chính, kinh doanh thương mại và tài liệu chứng cứ trực tuyến 24/7.',
+    title: 'Nộp Đơn Khởi Kiện & Tài Liệu',
+    desc: 'Tiếp nhận đơn khởi kiện vụ án dân sự, hành chính, kinh doanh thương mại và tài liệu chứng cứ 24/7.',
     icon: 'ShieldAlert',
     badge: 'Xử lý ưu tiên',
     link: '#nop-don'
@@ -337,7 +337,7 @@ export const publicServices: PublicServiceItem[] = [
     title: 'Đặt Lịch Tiếp Công Dân Của Lãnh Đạo Tòa Án',
     desc: 'Đăng ký hẹn lịch tiếp công dân trực tiếp của Chánh án và các Phó Chánh án định kỳ hàng tháng.',
     icon: 'CalendarClock',
-    badge: 'Trực tuyến 100%',
+    badge: 'Số hóa 100%',
     link: '#dat-lich'
   },
   {
@@ -551,9 +551,9 @@ Việc số hóa hồ sơ giúp Thẩm phán và Hội đồng xét xử thuận
   },
   {
     id: 'ticker-2',
-    title: 'Thông báo mở rộng tiếp nhận đơn khởi kiện và tài liệu tố tụng qua ứng dụng VNeID và Cổng dịch vụ công trực tuyến',
-    summary: 'Tạo kênh tương tác trực tuyến an toàn, thuận tiện cho người dân nộp đơn khởi kiện và theo dõi tiến độ giải quyết vụ án.',
-    content: `Nhằm tạo thuận lợi tối đa cho người dân tiếp cận công lý, TAND thành phố Hà Nội chính thức đưa vào vận hành phân hệ tiếp nhận đơn khởi kiện trực tuyến kết nối đồng bộ với Cơ sở dữ liệu quốc gia về dân cư thông qua tài khoản định danh điện tử VNeID mức độ 2.
+    title: 'Thông báo mở rộng tiếp nhận đơn khởi kiện và tài liệu tố tụng qua ứng dụng VNeID và Cổng dịch vụ công',
+    summary: 'Tạo kênh tương tác an toàn, thuận tiện cho người dân nộp đơn khởi kiện và theo dõi tiến độ giải quyết vụ án.',
+    content: `Nhằm tạo thuận lợi tối đa cho người dân tiếp cận công lý, TAND thành phố Hà Nội chính thức đưa vào vận hành phân hệ tiếp nhận đơn khởi kiện kết nối đồng bộ với Cơ sở dữ liệu quốc gia về dân cư thông qua tài khoản định danh điện tử VNeID mức độ 2.
 Người dân Thủ đô và cả nước có thể trực tiếp gửi đơn khởi kiện, tài liệu chứng cứ tới Tòa án 24/7. Toàn bộ thông tin cá nhân và tài liệu vụ án đều được mã hóa theo tiêu chuẩn an ninh quốc gia, bảo vệ an toàn tuyệt đối quyền và lợi ích hợp pháp của đương sự.`,
     category: 'Dịch vụ công',
     date: '28/10/2026',
@@ -586,9 +586,9 @@ Hội đồng xét xử phải thực hiện đúng nguyên tắc độc lập x
   },
   {
     id: 'ticker-4',
-    title: 'TAND TP Hà Nội phối hợp tổ chức các phiên tòa số hóa rút kinh nghiệm trực tuyến toàn thành phố',
-    summary: 'Tăng cường ứng dụng công nghệ, nâng cao kỹ năng điều hành phiên tòa trực tuyến của Thẩm phán hai cấp.',
-    content: `TAND TP Hà Nội đã tổ chức kết nối trực tuyến phiên tòa số hóa rút kinh nghiệm từ trụ sở Tòa án thành phố đến các điểm cầu TAND cấp quận, huyện. Mô hình này giúp đội ngũ Thẩm phán, Thư ký học hỏi kinh nghiệm điều hành phiên tòa, chuẩn hóa quy trình tố tụng điện tử và nâng cao năng lực ứng dụng công nghệ số.`,
+    title: 'TAND TP Hà Nội phối hợp tổ chức các phiên tòa số hóa rút kinh nghiệm toàn thành phố',
+    summary: 'Tăng cường ứng dụng công nghệ, nâng cao kỹ năng điều hành phiên tòa của Thẩm phán hai cấp.',
+    content: `TAND TP Hà Nội đã tổ chức kết nối phiên tòa số hóa rút kinh nghiệm từ trụ sở Tòa án thành phố đến các điểm cầu TAND cấp quận, huyện. Mô hình này giúp đội ngũ Thẩm phán, Thư ký học hỏi kinh nghiệm điều hành phiên tòa, chuẩn hóa quy trình tố tụng điện tử và nâng cao năng lực ứng dụng công nghệ số.`,
     category: 'Chỉ đạo điều hành',
     date: '27/10/2026',
     time: '10:00',
