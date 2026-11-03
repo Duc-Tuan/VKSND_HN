@@ -197,7 +197,7 @@ onUnmounted(() => {
           <!-- Bottom Slide Thumbnail / Dot Pills (Tươi sáng, viền đỏ tư pháp hiện đại) -->
           <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0 self-start md:self-end">
             <button v-for="(img, idx) in buildingImages" :key="img.id" @click="selectSlide(idx)"
-              class="relative rounded-lg sm:rounded-xl overflow-hidden border-2 transition-all duration-200 flex items-center gap-1.5 p-1 sm:p-1.5 shadow-lg"
+              class="relative rounded-lg sm:rounded-xl overflow-hidden border-1 transition-all duration-200 flex items-center gap-1.5 p-1 sm:p-1.5 shadow-lg"
               :class="currentIndex === idx
                 ? 'border-lemon-400 bg-white text-lemon-400 shadow-lemon-glow scale-105 ring-2 ring-lemon-400'
                 : 'border-white/60 bg-white/80 hover:bg-white text-slate-800 opacity-80 hover:opacity-100'"
@@ -226,10 +226,11 @@ onUnmounted(() => {
 
     <!-- Fullscreen Lightbox Modal -->
     <div v-if="isLightboxOpen"
-      class="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center p-4 backdrop-blur-md"
+      class="fixed inset-0 z-50 bg-slate-950/90 flex flex-col items-center justify-center p-4 backdrop-blur-md animate-scaleUp"
       @click.self="isLightboxOpen = false">
       <button @click="isLightboxOpen = false"
-        class="absolute top-4 right-4 text-white hover:text-lemon-400 p-2.5 rounded-full bg-navy-900/80 border border-slate-700 transition-colors">
+        class="absolute top-4 right-4 text-white hover:bg-white/25 p-2.5 rounded-full bg-white/15 border border-white/20 transition-all active:scale-90"
+        title="Đóng">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
@@ -237,10 +238,16 @@ onUnmounted(() => {
 
       <div class="max-w-5xl w-full text-center space-y-3">
         <img :src="currentImage.url" :alt="currentImage.title"
-          class="max-h-[80vh] w-auto mx-auto rounded-xl shadow-2xl border-2 border-lemon-400 object-contain" />
-        <div class="text-white">
+          class="max-h-[78vh] w-auto mx-auto rounded-2xl shadow-2xl border border-white/20 object-contain" />
+        <div class="bg-black/60 backdrop-blur-md rounded-xl p-3 max-w-2xl mx-auto border border-white/15 text-white">
+          <div class="flex items-center justify-center gap-2 mb-1">
+            <span
+              class="px-2 py-0.5 rounded text-[10px] font-black uppercase bg-red-700 text-white border border-red-500/50">
+              {{ currentImage.badge }}
+            </span>
+          </div>
           <h4 class="text-base sm:text-lg font-bold text-white">{{ currentImage.title }}</h4>
-          <p class="text-xs text-lemon-300">{{ currentImage.description }}</p>
+          <p class="text-xs text-slate-300 mt-1 leading-relaxed">{{ currentImage.description }}</p>
         </div>
       </div>
     </div>

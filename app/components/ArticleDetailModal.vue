@@ -26,25 +26,30 @@ const printArticle = () => {
     <!-- Backdrop -->
     <div 
       @click="$emit('close')" 
-      class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm transition-opacity"
+      class="fixed inset-0 bg-slate-950/75 backdrop-blur-sm transition-opacity"
     ></div>
 
-    <!-- Modal Box -->
-    <div class="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] flex flex-col overflow-hidden border-2 border-lemon-400 z-10 animate-scaleUp my-auto">
-      <!-- Header Bar with Lemon Accent -->
-      <div class="bg-navy-950 text-white px-6 py-4 flex items-center justify-between border-b-2 border-lemon-400">
-        <div class="flex items-center gap-2">
-          <span class="px-2.5 py-0.5 rounded text-[11px] font-bold uppercase bg-lemon-400 text-white">
+    <!-- Modal Box - Thiết kế hiện đại chuẩn Cổng TTĐT TAND TP Hà Nội -->
+    <div class="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl max-w-3xl sm:max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden border border-slate-200/90 z-10 animate-scaleUp my-auto">
+      <!-- Top Decorative Accent Bar -->
+      <div class="h-1.5 w-full bg-gradient-to-r from-red-800 via-red-600 to-amber-500"></div>
+
+      <!-- Header: Gradient Đỏ Tư Pháp -->
+      <div class="bg-gradient-to-r from-[#861200] via-[#a41600] to-[#781000] text-white px-5 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between shadow-sm">
+        <div class="flex items-center gap-2.5">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-white/20 text-yellow-300 backdrop-blur-sm border border-white/20 shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse"></span>
             {{ article.category }}
           </span>
-          <span class="text-xs text-slate-300">| {{ article.date }} ({{ article.time || '10:00' }})</span>
+          <span class="text-white/60 text-xs hidden sm:inline">•</span>
+          <span class="text-white/80 text-xs font-medium hidden sm:inline">{{ article.date }} ({{ article.time || '10:00' }})</span>
         </div>
 
         <div class="flex items-center gap-2">
           <!-- Text zoom -->
           <button 
             @click="articleFontSize = articleFontSize === 'normal' ? 'large' : 'normal'"
-            class="p-1.5 rounded hover:bg-navy-800 text-slate-300 hover:text-lemon-300 text-xs font-bold"
+            class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/25 text-white text-xs font-bold transition-all border border-white/10"
             title="Đổi cỡ chữ"
           >
             A{{ articleFontSize === 'large' ? '+' : '' }}
@@ -53,7 +58,7 @@ const printArticle = () => {
           <!-- Print button -->
           <button 
             @click="printArticle" 
-            class="p-1.5 rounded hover:bg-navy-800 text-slate-300 hover:text-lemon-300"
+            class="p-1.5 rounded-lg bg-white/10 hover:bg-white/25 text-white transition-all border border-white/10"
             title="In bài viết"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,26 +69,27 @@ const printArticle = () => {
           <!-- Close button -->
           <button 
             @click="$emit('close')" 
-            class="p-1.5 rounded-full hover:bg-navy-800 text-slate-300 hover:text-white"
+            class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 text-white flex items-center justify-center transition-all duration-200 active:scale-90 ml-1"
+            title="Đóng cửa sổ"
           >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
         </div>
       </div>
 
       <!-- Scrollable Body Content -->
-      <div class="p-6 overflow-y-auto space-y-5 text-slate-800" :class="articleFontSize === 'large' ? 'text-base' : 'text-sm'">
+      <div class="p-5 sm:p-7 overflow-y-auto space-y-5 text-slate-800" :class="articleFontSize === 'large' ? 'text-base' : 'text-sm'">
         <!-- Article Title -->
-        <h2 class="text-xl sm:text-2xl font-black text-navy-950 leading-snug">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 leading-snug">
           {{ article.title }}
         </h2>
 
         <!-- Metadata Bar -->
-        <div class="flex flex-wrap items-center justify-between py-2.5 px-3 bg-slate-50 rounded-lg border border-slate-200 text-xs text-slate-500 gap-2">
+        <div class="flex flex-wrap items-center justify-between py-2.5 px-3.5 bg-slate-50/90 rounded-xl border border-slate-200/80 text-xs text-slate-600 gap-2">
           <div class="flex items-center gap-3">
-            <span class="font-semibold text-navy-900">BTV/Tác giả: {{ article.author }}</span>
+            <span class="font-bold text-slate-800">Tác giả / BTV: {{ article.author }}</span>
             <span>•</span>
             <span>{{ article.views }} lượt xem</span>
           </div>
@@ -91,9 +97,9 @@ const printArticle = () => {
           <!-- AI Audio Reading button -->
           <button 
             @click="toggleSpeech"
-            class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-lemon-400 text-white font-bold hover:bg-lemon-500 transition-colors shadow-sm"
+            class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-700 hover:bg-red-800 text-white font-bold transition-all shadow-sm active:scale-95 text-xs"
           >
-            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <svg class="w-3.5 h-3.5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414z" clip-rule="evenodd"/>
             </svg>
             <span>{{ isSpeaking ? 'Đang đọc tự động...' : 'Nghe giọng đọc AI' }}</span>
@@ -101,19 +107,19 @@ const printArticle = () => {
         </div>
 
         <!-- Lead Summary -->
-        <div class="p-4 bg-lemon-50/60 rounded-xl border-l-4 border-lemon-500 font-semibold text-slate-800 italic leading-relaxed">
+        <div class="p-4 bg-red-50/50 rounded-xl border-l-4 border-red-700 font-medium text-slate-800 italic leading-relaxed">
           {{ article.summary }}
         </div>
 
         <!-- Image if available -->
-        <div v-if="article.imageUrl" class="rounded-xl overflow-hidden shadow-md">
+        <div v-if="article.imageUrl" class="rounded-2xl overflow-hidden shadow-md border border-slate-200">
           <img 
             :src="article.imageUrl" 
             :alt="article.title" 
             @error="(e: any) => e.target.src = '/images/tand_courtroom_hall.jpg'"
-            class="w-full h-80 object-cover object-center"
+            class="w-full h-72 sm:h-80 object-cover object-center"
           />
-          <p class="text-xs text-center text-slate-500 italic py-2 bg-slate-50">
+          <p class="text-xs text-center text-slate-500 italic py-2 bg-slate-50 border-t border-slate-100">
             Hình ảnh tư liệu hoạt động công tác xét xử - TAND Thành phố Hà Nội
           </p>
         </div>
@@ -138,8 +144,8 @@ const printArticle = () => {
           </div>
           <div class="flex items-center gap-2">
             <span>Chia sẻ bài viết:</span>
-            <button class="px-2 py-1 rounded bg-blue-600 text-white font-bold">Facebook</button>
-            <button class="px-2 py-1 rounded bg-blue-400 text-white font-bold">Zalo</button>
+            <button class="px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-bold transition-colors">Facebook</button>
+            <button class="px-2.5 py-1 rounded-lg bg-sky-500 hover:bg-sky-600 text-white font-bold transition-colors">Zalo</button>
           </div>
         </div>
       </div>
@@ -149,10 +155,10 @@ const printArticle = () => {
 
 <style scoped>
 @keyframes scaleUp {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
 }
 .animate-scaleUp {
-  animation: scaleUp 0.2s ease-out forwards;
+  animation: scaleUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 </style>

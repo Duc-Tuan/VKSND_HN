@@ -29,27 +29,28 @@ const handleLogin = (e: Event) => {
     <!-- Backdrop -->
     <div 
       @click="$emit('close')" 
-      class="fixed inset-0 bg-navy-950/80 backdrop-blur-sm transition-opacity"
+      class="fixed inset-0 bg-slate-950/75 backdrop-blur-sm transition-opacity"
     ></div>
 
-    <!-- Modal Box -->
-    <div class="relative bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border-2 border-lemon-400 z-10 animate-scaleUp my-auto">
-      <!-- Top Decorative Bar -->
-      <div class="h-2 bg-gradient-to-r from-lemon-500 via-lemon-400 to-amber-500"></div>
+    <!-- Modal Box - Thiết kế hiện đại chuẩn Cổng thông tin Nhà nước -->
+    <div class="relative bg-white rounded-2xl sm:rounded-3xl shadow-2xl max-w-md sm:max-w-lg w-full overflow-hidden border border-slate-200/90 z-10 animate-scaleUp my-auto">
+      <!-- Top Decorative Accent Bar -->
+      <div class="h-1.5 w-full bg-gradient-to-r from-red-800 via-red-600 to-amber-500"></div>
 
-      <!-- Header with Logo - Trang nghiêm, phong cách đỏ tư pháp -->
-      <div class="p-4 sm:p-6 bg-gradient-to-r from-lemon-500 via-lemon-400 to-red-700 text-white relative">
+      <!-- Header: Gradient Đỏ Tư Pháp Trang Trọng -->
+      <div class="p-5 sm:p-6 bg-gradient-to-r from-[#861200] via-[#a41600] to-[#781000] text-white relative shadow-sm">
         <button 
           @click="$emit('close')" 
-          class="absolute top-3.5 right-3.5 text-white/80 hover:text-white p-1.5 rounded-full hover:bg-black/20 transition-colors"
+          class="w-8 h-8 rounded-full bg-white/15 hover:bg-white/30 text-white flex items-center justify-center transition-all duration-200 absolute top-4 right-4 active:scale-90"
+          title="Đóng cửa sổ"
         >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
 
         <div class="flex items-center gap-3">
-          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0">
+          <div class="w-12 h-12 flex items-center justify-center flex-shrink-0 bg-white/10 rounded-2xl p-1 border border-white/20 shadow-inner">
             <img
               src="/images/logo_tand.png"
               alt="Logo TAND"
@@ -57,19 +58,19 @@ const handleLogin = (e: Event) => {
             />
           </div>
           <div>
-            <h3 class="text-sm sm:text-base font-black text-white">ĐĂNG NHẬP HỆ THỐNG</h3>
-            <p class="text-[11px] sm:text-xs text-yellow-300 font-bold">Cổng TTĐT TAND TP Hà Nội</p>
+            <h3 class="text-base sm:text-lg font-black text-white leading-tight">ĐĂNG NHẬP HỆ THỐNG</h3>
+            <p class="text-[11px] sm:text-xs text-yellow-300 font-bold mt-0.5">Cổng TTĐT TAND TP Hà Nội</p>
           </div>
         </div>
 
-        <!-- Tabs -->
-        <div class="grid grid-cols-2 gap-2 mt-4 sm:mt-5 p-1 bg-black/20 rounded-xl text-xs font-bold border border-white/20">
+        <!-- Segmented Tabs Switcher -->
+        <div class="grid grid-cols-2 gap-1.5 mt-5 p-1 bg-black/25 rounded-xl text-xs font-bold border border-white/15 backdrop-blur-sm">
           <button
             @click="activeTab = 'officer'"
-            class="py-2 px-1 rounded-lg transition-all flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs font-bold"
+            class="py-2 px-2 rounded-lg transition-all flex items-center justify-center gap-1.5 text-xs font-bold"
             :class="activeTab === 'officer' 
-              ? 'bg-white text-lemon-400 font-black shadow-md' 
-              : 'text-white/90 hover:text-white hover:bg-white/10'"
+              ? 'bg-white text-red-800 shadow-md' 
+              : 'text-white/80 hover:text-white hover:bg-white/10'"
           >
             <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -78,10 +79,10 @@ const handleLogin = (e: Event) => {
           </button>
           <button
             @click="activeTab = 'citizen'"
-            class="py-2 px-1 rounded-md transition-all flex items-center justify-center gap-1 sm:gap-1.5 text-[11px] sm:text-xs"
+            class="py-2 px-2 rounded-lg transition-all flex items-center justify-center gap-1.5 text-xs font-bold"
             :class="activeTab === 'citizen' 
-              ? 'bg-white text-lemon-400 font-bold shadow-sm' 
-              : 'text-white/90 hover:text-white hover:bg-white/10'"
+              ? 'bg-white text-red-800 shadow-md' 
+              : 'text-white/80 hover:text-white hover:bg-white/10'"
           >
             <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
@@ -91,26 +92,28 @@ const handleLogin = (e: Event) => {
         </div>
       </div>
 
-      <!-- Tab 1: Thẩm phán / Cán bộ -->
-      <div v-if="activeTab === 'officer'" class="p-4 sm:p-6 space-y-3.5 sm:space-y-4">
-        <form @submit="handleLogin" class="space-y-3 sm:space-y-4">
+      <!-- Tab 1: Thẩm phán / Cán bộ ngành -->
+      <div v-if="activeTab === 'officer'" class="p-5 sm:p-6 space-y-4">
+        <form @submit="handleLogin" class="space-y-3.5">
           <div>
-            <label class="block text-xs font-bold text-navy-950 mb-1">
-              Mã định danh cán bộ / Email ngành:
+            <label class="block text-xs font-bold text-slate-800 uppercase tracking-wide mb-1">
+              Mã định danh cán bộ / Email ngành <span class="text-red-600">*</span>
             </label>
             <input
               v-model="username"
               type="text"
               placeholder="thamphan.hanoi@toaan.gov.vn"
               required
-              class="w-full text-xs px-3 py-2 sm:py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-lemon-500 focus:ring-1 focus:ring-lemon-400"
+              class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-red-600 focus:ring-2 focus:ring-red-500/20 bg-slate-50/50 hover:bg-white focus:bg-white transition-all shadow-sm placeholder-slate-400"
             />
           </div>
 
           <div>
             <div class="flex items-center justify-between mb-1">
-              <label class="text-xs font-bold text-navy-950">Mật khẩu:</label>
-              <a href="#" class="text-[11px] text-lemon-700 hover:underline">Quên mật khẩu?</a>
+              <label class="text-xs font-bold text-slate-800 uppercase tracking-wide">
+                Mật khẩu <span class="text-red-600">*</span>
+              </label>
+              <a href="#" class="text-[11px] text-red-700 hover:text-red-800 font-semibold hover:underline">Quên mật khẩu?</a>
             </div>
             <div class="relative">
               <input
@@ -118,12 +121,12 @@ const handleLogin = (e: Event) => {
                 :type="showPassword ? 'text' : 'password'"
                 placeholder="••••••••"
                 required
-                class="w-full text-xs px-3 py-2 sm:py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-lemon-500 focus:ring-1 focus:ring-lemon-400 pr-10"
+                class="w-full text-xs sm:text-sm px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-red-600 focus:ring-2 focus:ring-red-500/20 bg-slate-50/50 hover:bg-white focus:bg-white transition-all shadow-sm placeholder-slate-400 pr-10"
               />
               <button
                 type="button"
                 @click="showPassword = !showPassword"
-                class="absolute right-2.5 top-2 sm:top-2.5 text-slate-400 hover:text-slate-600"
+                class="absolute right-3 top-2.5 text-slate-400 hover:text-slate-600"
               >
                 <svg v-if="!showPassword" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -136,73 +139,76 @@ const handleLogin = (e: Event) => {
             </div>
           </div>
 
-          <div class="flex items-center justify-between text-xs text-slate-600">
-            <label class="flex items-center gap-1.5 cursor-pointer">
-              <input v-model="rememberMe" type="checkbox" class="rounded text-lemon-500 focus:ring-lemon-400"/>
-              <span class="text-[11px] sm:text-xs">Ghi nhớ phiên</span>
+          <div class="flex items-center justify-between text-xs text-slate-600 pt-0.5">
+            <label class="flex items-center gap-2 cursor-pointer select-none">
+              <input v-model="rememberMe" type="checkbox" class="w-4 h-4 rounded text-red-600 focus:ring-red-500 border-slate-300"/>
+              <span class="text-xs font-medium text-slate-700">Ghi nhớ phiên làm việc</span>
             </label>
-            <span class="text-[10px] sm:text-[11px] text-slate-400">SSL 256-bit</span>
+            <span class="text-[11px] text-slate-400 font-mono">Bảo mật SSL 256-bit</span>
           </div>
 
           <button
             type="submit"
-            class="w-full py-2.5 px-4 rounded-lg bg-lemon-400 hover:bg-lemon-500 text-white font-black text-xs uppercase tracking-wide transition-all shadow-md hover:shadow-lemon-glow flex items-center justify-center gap-2 active:scale-95"
+            class="w-full py-2.5 sm:py-3 px-4 rounded-xl bg-gradient-to-r from-[#861200] via-[#a41600] to-[#861200] hover:brightness-110 text-white font-bold text-xs sm:text-sm uppercase tracking-wider transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 active:scale-95"
           >
             <span v-if="!loginSuccess">Đăng nhập tài khoản ngành</span>
-            <span v-else class="text-emerald-950 font-bold flex items-center gap-1">
-              ✓ Đăng nhập thành công!
+            <span v-else class="text-white font-bold flex items-center gap-1">
+              ✓ Xác thực thành công!
             </span>
           </button>
         </form>
 
-        <div class="pt-2 sm:pt-3 border-t border-slate-100">
-          <button class="w-full py-2 px-3 rounded border border-navy-800 text-navy-900 hover:bg-slate-50 text-[11px] sm:text-xs font-semibold flex items-center justify-center gap-2">
-            <svg class="w-4 h-4 text-lemon-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="pt-2 border-t border-slate-200">
+          <button class="w-full py-2.5 px-3 rounded-xl border border-slate-300 hover:border-slate-400 bg-slate-50 hover:bg-slate-100 text-slate-800 text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-sm">
+            <svg class="w-4 h-4 text-red-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
             </svg>
-            <span>Đăng nhập bằng USB Token (Chữ ký số)</span>
+            <span>Đăng nhập bằng USB Token (Chữ ký số chuyên dùng)</span>
           </button>
         </div>
       </div>
 
-      <!-- Tab 2: Công dân VNeID -->
-      <div v-else class="p-4 sm:p-6 space-y-3.5 sm:space-y-4">
-        <div class="text-center space-y-2">
-          <div class="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold text-lg">
+      <!-- Tab 2: Công dân VNeID & Doanh nghiệp -->
+      <div v-else class="p-5 sm:p-6 space-y-4">
+        <div class="text-center space-y-2 p-4 bg-red-50/70 rounded-2xl border border-red-100">
+          <div class="w-12 h-12 mx-auto rounded-full bg-red-600 text-yellow-300 flex items-center justify-center font-black text-xl shadow-md border-2 border-yellow-300">
             ★
           </div>
-          <h4 class="text-xs sm:text-sm font-bold text-navy-950">Đăng nhập qua Định danh điện tử Quốc gia (VNeID)</h4>
-          <p class="text-[11px] sm:text-xs text-slate-500">
-            Dành cho công dân nộp đơn thư tố giác, tra cứu tiến độ vụ án và tham gia dịch vụ công tư pháp.
+          <h4 class="text-sm font-bold text-slate-900">Định danh điện tử Quốc gia (VNeID)</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Dành cho công dân nộp đơn thư, đăng ký tiếp công dân, tra cứu tiến độ vụ án và tham gia dịch vụ tư pháp.
           </p>
         </div>
 
-        <button
-          @click="handleLogin"
-          class="w-full py-2.5 sm:py-3 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wide transition-colors shadow-md flex items-center justify-center gap-2 active:scale-95"
-        >
-          <span v-if="!loginSuccess">Đăng nhập với VNeID</span>
-          <span v-else class="text-white font-bold">✓ Xác thực thành công!</span>
-        </button>
+        <div class="space-y-2.5 pt-1">
+          <button
+            @click="handleLogin"
+            class="w-full py-3 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-xs sm:text-sm uppercase tracking-wide transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 active:scale-95"
+          >
+            <span v-if="!loginSuccess" class="flex items-center gap-2">
+              <span class="text-yellow-300 text-base">★</span> Đăng nhập với VNeID
+            </span>
+            <span v-else class="text-white font-bold">✓ Xác thực VNeID thành công!</span>
+          </button>
 
-        <button
-          @click="handleLogin"
-          class="w-full py-2 sm:py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wide transition-colors shadow-md flex items-center justify-center gap-2 active:scale-95"
-        >
-          <span>Cổng Dịch vụ công Quốc gia</span>
-        </button>
+          <button
+            @click="handleLogin"
+            class="w-full py-2.5 px-4 rounded-xl bg-[#00529c] hover:bg-[#004080] text-white font-bold text-xs uppercase tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 active:scale-95"
+          >
+            <span>Cổng Dịch vụ công Quốc gia</span>
+          </button>
+        </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <style scoped>
 @keyframes scaleUp {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: scale(0.96) translateY(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
 }
 .animate-scaleUp {
-  animation: scaleUp 0.25s ease-out forwards;
+  animation: scaleUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 </style>
